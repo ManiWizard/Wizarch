@@ -7,6 +7,12 @@ Item {
     property date today: new Date()
     property bool monthView: false
     property date page: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12)
+    readonly property int monthWeeks: {
+        const first = new Date(page.getFullYear(), page.getMonth(), 1, 12);
+        const offset = (first.getDay() + 6) % 7;
+        const days = new Date(page.getFullYear(), page.getMonth() + 1, 0, 12).getDate();
+        return Math.ceil((offset + days) / 7);
+    }
     signal modeChanged()
     function reset() { monthView = false; page = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12); }
     function changePage(direction) {
@@ -32,12 +38,12 @@ Item {
         y: 44; columns: 7; spacing: 4
         Repeater { model: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]; Text { required property string modelData; width: (cal.width-24)/7; height: 20; text: modelData; horizontalAlignment: Text.AlignHCenter; color: Core.Theme.textSecondary; font.pixelSize: 10 } }
         Repeater {
-            model: cal.monthView ? 42 : 7
+            model: cal.monthView ? cal.monthWeeks * 7 : 7
             Rectangle {
                 required property int index
                 readonly property date day: cal.dateAt(index)
                 readonly property bool isToday: Qt.formatDateTime(day,"yyyy-MM-dd") === Qt.formatDateTime(cal.today,"yyyy-MM-dd")
-                width: (cal.width-24)/7; height: cal.monthView ? 41 : 64; radius: 8
+                width: (cal.width-24)/7; height: cal.monthView ? (cal.monthWeeks === 6 ? 41 : cal.monthWeeks === 5 ? 49 : 60) : 64; radius: 8
                 color: isToday ? Core.Theme.primaryContainer : dayMouse.containsMouse ? Core.Theme.hoverSurface : "transparent"
                 opacity: !cal.monthView || day.getMonth() === cal.page.getMonth() ? 1 : 0.45
                 Text { anchors.horizontalCenter: parent.horizontalCenter; y: cal.monthView ? 3 : 12; text: parent.day.getDate(); color: parent.isToday ? Core.Theme.textOnPrimaryContainer : Core.Theme.textPrimary; font.pixelSize: cal.monthView ? 13 : 17 }

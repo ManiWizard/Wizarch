@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+screenshot_dir="${XDG_PICTURES_DIR:-$HOME/Pictures}/Screenshots"
+mkdir -p "$screenshot_dir"
+
+selection="$(slurp -b '#101018cc' -c '#d8f4ffff' -s '#00000000' -w 2)" || exit 0
+output="$screenshot_dir/Screenshot_$(date +'%Y-%m-%d_%H-%M-%S').png"
+
+# Let the compositor present one clean frame after slurp's selection layer closes.
+sleep 0.15
+
+grim -g "$selection" - | satty \
+    --filename - \
+    --output-filename "$output" \
+    --copy-command wl-copy \
+    --save-after-copy \
+    --early-exit copy \
+    --no-window-decoration \
+    --initial-tool pointer \
+    --title "Screenshot"
