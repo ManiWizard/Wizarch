@@ -1,0 +1,9 @@
+# Local development history, generated artifacts, and backups
+/work/
+/outputs/
+
+# Per-user theme selection contains absolute paths
+/quickshell/state/active.json
+
+# Optional third-party Eclipse wallpaper (provide locally if desired)
+/quickshell/themes/eclipse/assets/wallpaper.jpg

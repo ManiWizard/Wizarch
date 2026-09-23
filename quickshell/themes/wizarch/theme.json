@@ -1,0 +1,78 @@
+{
+  "id": "wizarch",
+  "name": "Wizarch",
+  "description": "Smoky violet glass, flowing shadows, and a little quiet magic.",
+  "colors": {
+    "background": "#141218",
+    "surface": "#141218",
+    "surfaceDim": "#141218",
+    "surfaceBright": "#3b383e",
+    "surfaceContainerLowest": "#0f0d13",
+    "surfaceContainerLow": "#1d1b20",
+    "surfaceContainer": "#211f24",
+    "surfaceContainerHigh": "#2b292f",
+    "surfaceContainerHighest": "#36343a",
+    "onSurface": "#e6e0e9",
+    "surfaceVariant": "#49454e",
+    "onSurfaceVariant": "#cac4cf",
+    "inverseSurface": "#e6e0e9",
+    "inverseOnSurface": "#322f35",
+    "outline": "#948f99",
+    "outlineVariant": "#49454e",
+    "shadow": "#000000",
+    "scrim": "#000000",
+    "surfaceTint": "#d0bcfe",
+    "primary": "#d0bcfe",
+    "onPrimary": "#36265d",
+    "primaryContainer": "#4d3d75",
+    "onPrimaryContainer": "#e9ddff",
+    "inversePrimary": "#65558f",
+    "secondary": "#ccc2db",
+    "onSecondary": "#332d41",
+    "secondaryContainer": "#4a4458",
+    "onSecondaryContainer": "#e8def8",
+    "tertiary": "#efb8c7",
+    "onTertiary": "#4a2532",
+    "tertiaryContainer": "#633b48",
+    "onTertiaryContainer": "#ffd9e2",
+    "error": "#ffb4ab",
+    "onError": "#690005",
+    "errorContainer": "#93000a",
+    "onErrorContainer": "#ffdad6",
+    "primaryFixed": "#e9ddff",
+    "primaryFixedDim": "#d0bcfe",
+    "onPrimaryFixed": "#210f47",
+    "onPrimaryFixedVariant": "#4d3d75",
+    "secondaryFixed": "#e8def8",
+    "secondaryFixedDim": "#ccc2db",
+    "onSecondaryFixed": "#1e192b",
+    "onSecondaryFixedVariant": "#4a4458",
+    "tertiaryFixed": "#ffd9e2",
+    "tertiaryFixedDim": "#efb8c7",
+    "onTertiaryFixed": "#31101d",
+    "onTertiaryFixedVariant": "#633b48",
+    "divider": "#948f99",
+    "hoverSurface": "#4a4458",
+    "hoverActiveSurface": "#49454e"
+  },
+  "assets": {
+    "wallpaper": "assets/wizarch-arcane-4k.png",
+    "logo": "assets/logo.svg",
+    "wallpapers": [
+      {
+        "name": "Arcane",
+        "path": "assets/wizarch-arcane-4k.png"
+      },
+      {
+        "name": "Nocturne",
+        "path": "assets/wizarch-nocturne-4k.png"
+      }
+    ]
+  },
+  "hyprland": {
+    "rounding": 12,
+    "borderSize": 2,
+    "activeBorder": "#d0bcfe",
+    "inactiveBorder": "#49454e"
+  }
+}
