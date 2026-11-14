@@ -139,7 +139,7 @@ class Controls:
         if not client:
             return
         address, window = client["address"], "address:" + client["address"]
-        monitor = next(m for m in self.monitors if m["id"] == client["monitor"])
+        monitor = next((m for m in self.monitors if m["id"] == client["monitor"]), self.monitors[0])
         record = self.state["popped"].get(address)
         if client["pinned"] or record:
             if client["pinned"]:
@@ -167,7 +167,8 @@ def main():
     if args.address and not re.fullmatch(r"0x[0-9a-fA-F]+", args.address):
         parser.error("Expected a hexadecimal window address")
     key = re.sub(r"[^a-zA-Z0-9_-]", "_", os.environ.get("HYPRLAND_INSTANCE_SIGNATURE", "session"))
-    path = Path(os.environ["XDG_RUNTIME_DIR"]) / ("wizarch-windows-" + key + ".json")
+    runtime = os.environ.get("XDG_RUNTIME_DIR", f"/run/user/{os.getuid()}")
+    path = Path(runtime) / ("wizarch-windows-" + key + ".json")
     with path.with_suffix(".lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         controls = Controls(path)

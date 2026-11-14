@@ -16,10 +16,11 @@ def paste(data):
         address = FOCUS.read_text().strip()
         if re.fullmatch(r'0x[0-9a-fA-F]+', address):
             selector = 'address:' + address
-            subprocess.run(['hyprctl', 'dispatch', f'hl.dsp.focus({{ window = "{selector}" }})'],
+            quoted = json.dumps(selector, ensure_ascii=False)
+            subprocess.run(['hyprctl', 'dispatch', f'hl.dsp.focus({{ window = {quoted} }})'],
                            check=False, capture_output=True, timeout=3)
             time.sleep(.12)
-            subprocess.run(['hyprctl', 'dispatch', f'hl.dsp.send_shortcut({{ mods = "CTRL", key = "V", window = "{selector}" }})'],
+            subprocess.run(['hyprctl', 'dispatch', f'hl.dsp.send_shortcut({{ mods = "CTRL", key = "V", window = {quoted} }})'],
                            check=False, capture_output=True, timeout=3)
     except OSError:
         pass
