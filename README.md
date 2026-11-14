@@ -1,6 +1,6 @@
 # Wizarch
 
-A compact desktop shell for Arch Linux, Hyprland, and Quickshell. One floating pill opens an app launcher, calendar, quick settings, theme picker, and a titleless notification center. Wizarch uses flat Material-inspired surfaces and a custom wizard-hat mark.
+A compact Quickshell desktop shell for Arch Linux and Hyprland (Lua configuration). A top-center pill opens the app launcher, calendar, quick settings, theme picker, input picker, and notification center, paired with per-monitor workspaces, window controls, a quick-action wheel, and a multi-page Settings window.
 
 <p align="center"><img src="docs/screenshots/pill.png" alt="Collapsed Wizarch pill showing the logo, clock, and status" width="388"></p>
 
@@ -8,7 +8,7 @@ A compact desktop shell for Arch Linux, Hyprland, and Quickshell. One floating p
 
 | Quick settings | Notifications |
 | --- | --- |
-| <img src="docs/screenshots/quick-settings.png" alt="Wi-Fi and Bluetooth, a five-column control grid, sliders, and tray" width="360"> | <img src="docs/screenshots/notifications.png" alt="Titleless notification center with a notification card" width="360"> |
+| <img src="docs/screenshots/quick-settings.png" alt="Wi-Fi and Bluetooth, quick toggles, sliders, and tray" width="360"> | <img src="docs/screenshots/notifications.png" alt="Notification center with a notification card" width="360"> |
 
 | Calendar · week | Calendar · month |
 | --- | --- |
@@ -18,163 +18,160 @@ A compact desktop shell for Arch Linux, Hyprland, and Quickshell. One floating p
 
 | Launcher | Settings |
 | --- | --- |
-| <img src="docs/screenshots/launcher.png" alt="Pinned applications and groups in the launcher" width="360"> | <img src="docs/screenshots/settings.png" alt="Sound controls and discoverable shortcuts" width="360"> |
+| <img src="docs/screenshots/launcher.png" alt="Pinned applications and groups in the launcher" width="360"> | <img src="docs/screenshots/settings.png" alt="Settings window" width="360"> |
 
-<p align="center"><img src="docs/screenshots/sign-in.png" alt="Wizarch sign-in screen preview" width="720"></p>
+<p align="center"><img src="docs/screenshots/sign-in.png" alt="Optional greetd/ReGreet sign-in theme preview" width="720"></p>
 
 ## What it does
 
-- Opens on the focused monitor and dismisses with Escape, an outside click, or an inactivity timeout (except the launcher).
-- Opens the launcher to pinned apps and custom groups, with search, All apps, and command entry. Compact groups show four preview icons; large groups show eight launchable apps and a ninth tile that opens the full group. Right click empty space to create a group, or right click an app for launch, pin, and group actions. In Edit apps, click a tile to add or remove it from the current group.
-- Shows rolling week, month, and year calendars with Solar Hijri dates, and nine independent workspaces per monitor.
-- Controls available Wi-Fi, Bluetooth, audio, privacy, power, and backlight devices. Unsupported controls are dimmed.
-- Includes clipboard history, an emoji picker, media playback controls, tray icons, and desktop notifications.
-- Applies theme colors, wallpaper, logo, and Hyprland borders together. The bundled **Wizarch** theme is ready to use.
+- **Top-center Pill (`Pill.qml`)**: Displays the theme emblem, workspace indicator (9 slots per monitor), clock, and live hardware indicators on each screen. Supports connected or floating placement, auto-hide (push or overlay reveal), optional hide-on-empty-monitor, and an optional screen border that can follow Hyprland's window corner radius.
+- **Launcher (`LauncherView.qml`)**: Shows pinned apps, drag-and-drop reordering, compact (4-icon preview) and large (8 direct launch tiles + open-group tile) app groups, search across all desktop entries, and interactive `>command` shell execution (requiring an explicit confirmation prompt before running).
+- **Calendar (`CalendarView.qml`)**: Rolling week, month, and year views across `1901–2099` with selectable Gregorian or Solar Hijri primary/secondary calendars, weekday style (`Follow calendar`, `Iranian · Sat–Fri`, `Mon–Sun`, `Sun–Sat`), and up to 500 device-local calendar events.
+- **Quick Settings (`QuickSettings.qml`) & Media (`MediaCard.qml`)**: Power actions (`Shutdown`, `Sign Out`, `Restart`, `Sleep`, `Hibernate`), Wi-Fi & Bluetooth detail panels, quick toggle grid (`Sound`, `Microphone`, `Screenshot`, `Desktop`, `Airplane mode`, `Do not disturb`, `Screen record`, `Battery saver`), volume/brightness sliders, capability-gated MPRIS media card, system tray icons, and minimized window restore icons. Controls for absent hardware or uninstalled optional tools show an explicit unavailable/disabled state rather than placeholder values.
+- **Notification Center (`NotificationCenter.qml`)**: Acts as the desktop `org.freedesktop.Notifications` daemon, displaying notification summary/body, urgent highlighting, per-card dismiss, and Clear all.
+- **Input Picker (`InputPicker.qml`)**: Clipboard history via `cliphist`/`wl-copy` (with paste-back into the previously focused window) and an emoji picker.
+- **Quick-Action Wheel (`QuickWheel.qml`)**: Circular `Super+W` overlay on the focused monitor with 8 actions (`Launcher`, `Calendar`, `Quick settings`, `Notifications`, `Clipboard`, `Screenshot`, `Themes`, `Settings`) operable by pointer or keyboard (`Arrows`, `Tab`/`Shift+Tab`, `Home`/`End`, `Enter`/`Space`).
+- **Settings Window (`SettingsWindow.qml`)**: Tiled application window with searchable sidebar (`Ctrl+F`) across 12 categories (`Wi-Fi`, `Network`, `Bluetooth`, `Displays`, `Sound`, `Power`, `Multitasking`, `Appearance`, `Panel`, `Notifications`, `Calendar`, `Keyboard`), per-display UI scaling (`100%–200%`), live window spacing (`0–150%`), local Material theme preview/apply/rollback, and local collection import.
+- **Per-monitor Workspaces & Scrolling (`workspaces.py`, `layouts.py`, `wizarch-windows.lua`)**: Nine independent workspaces per monitor, empty-desktop toggle, per-workspace Dwindle/Scrolling layout persistence (`Super+Ctrl+L`), and 96% column width with live adjacent-window side peeks in Scrolling mode.
 
 ## Requirements
 
-This setup targets **Arch Linux with a Lua-based Hyprland configuration**. It was checked with Hyprland 0.56.2 and Quickshell 0.3.1. Install the core packages:
+Targets **Arch Linux** running **Hyprland with Lua configuration** (developed against Hyprland 0.56.x and Quickshell 0.3.x).
+
+Core packages:
 
 ```sh
 sudo pacman -S --needed git hyprland quickshell python util-linux kitty pipewire wireplumber upower wl-clipboard cliphist
 ```
 
-The optional screenshot action uses `grim`, `slurp`, `satty`, and `wl-clipboard`:
+Optional runtime packages (corresponding UI controls remain disabled or unavailable if omitted):
+
+- **Screenshots & screen lock**: `grim`, `slurp`, `satty`, `hyprlock`
+- **Wi-Fi / hotspot / radios / power profiles / screen recording**: `networkmanager` (`nmcli`), `rfkill`, `power-profiles-daemon` (`powerprofilesctl`), `wf-recorder`
+- **Bluetooth**: BlueZ (`bluetooth.service`) and a Bluetooth adapter
+- **Desktop dark/light synchronization & laptop backlight**: `glib2` (`gsettings`), `gsettings-desktop-schemas`, `xdg-desktop-portal-gtk`, Qt's GTK3 platform plugin, and `/sys/class/backlight` + `systemd-logind`
+- **Full Material theme validation & key-based generation**: Create `$XDG_DATA_HOME/wizarch/theme-runtime` with `quickshell/requirements-theme.lock` (`Pillow`, `jsonschema`, `material-color-utilities`). Without this venv, Wizarch still starts using its built-in fallback palette (`Fallback.js`). See [docs/material-theme/AUTHORING.md](docs/material-theme/AUTHORING.md).
+
+Because Wizarch registers `org.freedesktop.Notifications`, stop or mask other notification daemons (`mako`, `dunst`, `swaync`, etc.) before running it.
+
+## Safe installation
+
+Clone the repository and run the interactive installer from inside your user account (never run `install.sh` with `sudo`):
 
 ```sh
-sudo pacman -S --needed grim slurp satty wl-clipboard
+git clone https://github.com/ManiWizard/Wizarch.git
+cd Wizarch
 ```
 
-Bluetooth needs BlueZ and an adapter. Wi-Fi browsing and hotspot need NetworkManager and `nmcli`; basic radio toggling uses `/dev/rfkill`. Battery saver needs `power-profiles-daemon`, recording needs `wf-recorder`, and laptop brightness uses a backlight device and logind. Controls without those capabilities remain unavailable. Wizarch owns the `org.freedesktop.Notifications` service, so stop any other notification daemon before starting it. See the official [Quickshell installation guide](https://quickshell.org/docs/v0.3.0/guide/install-setup/) and [Hyprland Lua configuration guide](https://wiki.hypr.land/configuring/core/) if your system uses a different setup.
+Preview every check, backup path, and file copy first:
 
-## Manual installation
+```sh
+bash scripts/install.sh --dry-run
+```
 
-1. Clone the repository and back up an existing Quickshell configuration. Run these commands from a terminal inside your Hyprland session:
+Run the interactive install:
 
-   ```sh
-   git clone https://github.com/ManiWizard/Wizarch.git
-   cd Wizarch
-   mkdir -p "$HOME/.config"
-   if [ -e "$HOME/.config/quickshell" ]; then
-       mv "$HOME/.config/quickshell" "$HOME/.config/quickshell.backup.$(date +%s)"
-   fi
-   cp -a quickshell "$HOME/.config/quickshell"
-   ```
+```sh
+bash scripts/install.sh
+```
 
-2. Install the small helper scripts. The screenshot helper is useful only if its optional packages above are installed.
+What `scripts/install.sh` does:
 
-   ```sh
-   install -Dm755 scripts/wizarch-open "$HOME/.local/bin/wizarch-open"
-   install -Dm755 scripts/hypr-desktop "$HOME/.local/bin/hypr-desktop"
-   install -Dm755 scripts/hypr-screenshot "$HOME/.local/bin/hypr-screenshot"
-   ```
+1. Checks core and optional runtime dependencies read-only and prints the exact `pacman` command if anything is missing (never runs `sudo`).
+2. Asks before each major step:
+   - Backing up any existing `$XDG_CONFIG_HOME/quickshell` and copying `quickshell/` into place.
+   - Backing up and installing `wizarch-open`, `hypr-desktop`, and `hypr-screenshot` into `~/.local/bin/`.
+   - Backing up and installing `wizarch-bindings.lua`, `wizarch-windows.lua`, and `hyprlock.conf` into `$XDG_CONFIG_HOME/hypr/`, and optionally appending a fenced loader block (`-- >>> wizarch-managed-start >>>`) to `$XDG_CONFIG_HOME/hypr/hyprland.lua`.
+   - Running offline theme initialization (`themes.py init wizarch`).
+   - Optionally reloading `hyprctl` and starting `qs --no-duplicate --daemonize` if a live Hyprland session is active.
+3. Saves timestamped backups and a manifest under `$XDG_STATE_HOME/wizarch/install-backups/` so removal can cleanly restore your prior files.
 
-3. Initialize the bundled theme. This creates local theme state and `~/.config/hypr/wizarch-theme.lua` before Hyprland tries to load it.
+## Safe uninstallation
 
-   ```sh
-   python3 "$HOME/.config/quickshell/services/themes.py" init wizarch
-   ```
+Preview what will be removed and restored:
 
-4. Add the supplied Lua bindings to your **existing** Hyprland config. Keep your monitor and other personal settings; remove or adjust bindings that conflict with those in the example.
+```sh
+bash scripts/uninstall.sh --dry-run
+```
 
-   ```sh
-   install -Dm644 examples/hyprland-wizarch.lua "$HOME/.config/hypr/wizarch-bindings.lua"
-   install -Dm644 examples/wizarch-windows.lua "$HOME/.config/hypr/wizarch-windows.lua"
-   ```
+Run the interactive uninstaller:
 
-   Add this line near the end of `~/.config/hypr/hyprland.lua`:
+```sh
+bash scripts/uninstall.sh
+```
 
-   ```lua
-   dofile(os.getenv("HOME") .. "/.config/hypr/wizarch-bindings.lua")
-   ```
+`scripts/uninstall.sh` reads the manifest created by `scripts/install.sh`, asks before each phase, removes only files and `hyprland.lua` loader lines added by the installer (preserving any later edits you made outside the Wizarch block), and restores your backed-up `~/.config/quickshell`, `~/.local/bin/*`, and Hyprland files.
 
-   The example loads the generated theme fragment, starts Quickshell and clipboard history at login, and adds panel and workspace shortcuts. Install the lock configuration as well:
+## Keybindings
 
-   ```sh
-   install -Dm644 examples/hyprlock.conf "$HOME/.config/hypr/hyprlock.conf"
-   ```
-
-   `Super+L` requires `hyprlock`. Do not replace your Lua config with a legacy `hyprland.conf` snippet.
-
-5. Reload Hyprland and start Wizarch in the current session. The autostart hook applies on the next login.
-
-   ```sh
-   hyprctl reload
-   qs --no-duplicate --daemonize
-   ~/.local/bin/wizarch-open status
-   ```
-
-   If a panel does not open, inspect `qs log -t 40` and `hyprctl configerrors`.
-
-## Controls
+Bindings are defined in `examples/hyprland-wizarch.lua` and `examples/wizarch-windows.lua`:
 
 | Shortcut or click | Action |
 | --- | --- |
-| Left-click hat / `Super+Space` | Launcher |
-| Right-click hat / `Super+Alt+T` | Themes |
-| Click clock / `Super+Alt+C` | Calendar |
-| Click the month or year in the calendar | Open month or year view |
-| Today | Return to the rolling week |
-| Click status / `Super+Alt+Q` | Quick settings |
-| Bell / `Super+Alt+N` | Notifications |
-| `Super+V` / `Super+.` | Clipboard history / emoji picker |
-| `Super+arrows` | Focus a neighboring window |
-| `Super+Shift+arrows` | Move the focused window to the monitor in that direction and follow it |
-| `Super+Ctrl+Shift+arrows` | Alias for moving the focused window to the monitor in that direction |
-| `Super+J` | Toggle horizontal/vertical split (dwindle) |
-| `Super+Ctrl+L` | Toggle Dwindle/Scrolling on the current workspace; choice is remembered |
-| `Super+T` / `Super+Shift+V` | Toggle floating/tiling |
-| `Super+F` | Toggle fullscreen |
-| `Super+Alt+F` | Toggle maximized within the monitor work area |
-| `Super+M` | Minimize the focused window to the tray |
-| `Super+Shift+M` / click a window's tray icon | Restore the last minimized / selected window here |
-| `Super+O` | Float and pin a window across workspace changes; press again to restore its previous state |
-| `Super+−` / `Super+=` | Shrink/grow width by 100 px; add Shift for height |
-| Add `Alt` / `Ctrl` to resize | Use 25 / 300 px steps; hold to repeat |
-| `Super+left/right mouse drag` | Move / resize a window |
-| `Alt+Tab` / `Alt+Shift+Tab` | Focus and raise next / previous window on the current workspace |
-| `Super+W` | Open the shell quick-action wheel |
-| `Super+C` | Close the focused window |
-| `Super+Ctrl+Alt+Left/Right/Down/Up` | Existing aliases: swap left/right, minimize, show/hide all tray windows |
-| `Super+L` | Lock the current session |
-| `Super+1…9` | Switch workspace 1–9 on the focused monitor |
-| `Super+Shift+1…9` | Move the focused window to workspace 1–9 on its monitor |
-| `Super+mouse wheel` | Cycle workspaces 1–9 on the focused monitor |
-| `Super+D` | Toggle an empty desktop on the focused monitor |
-| `Super+Shift+S` | Select and annotate a screenshot |
+| Click hat / `Super+Space` | Toggle Launcher |
+| Right-click hat / `Super+Alt+T` | Toggle Themes / Appearance in Settings |
+| Click clock / `Super+Alt+C` | Toggle Calendar |
+| Click status / `Super+Alt+Q` | Toggle Quick Settings |
+| Click bell / `Super+Alt+N` | Toggle Notification Center |
+| `Super+V` / `Super+.` | Clipboard history / Emoji picker |
+| `Super+W` | Open Quick-Action Wheel (`Arrows`, `Tab`/`Shift+Tab`, `Home`/`End`, `Enter`/`Space`, `Esc`/right-click) |
+| `Super+Shift+S` | Area screenshot with `slurp` + `grim` + `satty` |
+| `Super+L` | Lock screen with `hyprlock` |
+| `Super+1…9` / `Super+Mouse Wheel` | Switch workspace 1–9 on focused monitor |
+| `Super+Shift+1…9` | Move focused window to workspace 1–9 on its monitor |
+| `Super+D` | Toggle empty desktop on focused monitor |
+| `Super+Arrows` | Focus neighbor window (column focus in Scrolling mode) |
+| `Super+Shift+Arrows` / `Super+Ctrl+Shift+Arrows` | Move focused window to monitor in direction and follow |
+| `Super+Ctrl+Alt+Left/Right` | Swap window / column left or right |
+| `Super+Ctrl+L` | Toggle Dwindle / Scrolling layout on current workspace |
+| `Super+J` | Toggle Dwindle split orientation |
+| `Super+T` / `Super+Shift+V` | Toggle floating / tiling |
+| `Super+F` / `Super+Alt+F` | Toggle fullscreen / maximized |
+| `Super+M` / `Super+Ctrl+Alt+Down` | Minimize focused window to Quick Settings tray |
+| `Super+Shift+M` | Restore last minimized window to active workspace |
+| `Super+Ctrl+Alt+Up` | Toggle `special:wizarch-tray` workspace |
+| `Super+O` | Pop out: float, resize, center, and pin window across workspaces (press again to restore) |
+| `Super+−` / `Super+=` (add `Shift` for height) | Resize active window (`100 px`; add `Alt` for `25 px`, `Ctrl` for `300 px`) |
+| `Super+Left/Right Drag` | Drag move / drag resize window |
+| `Alt+Tab` / `Alt+Shift+Tab` | Cycle and raise windows on current workspace |
+| `Super+C` | Close focused window |
 
-Scrolling keeps one large app centered, with small **real-window side peeks** showing its neighbors. A lone column fills the work area; two or more columns each use 96% of it, leaving about 2% per side before normal gaps and borders. At the strip's ends only the existing neighbor peeks. Native windows retain their borders, stay live, and can receive pointer input directly. There is no preview-card gutter, capture cache, or extra screen reservation. A click-through frame guard reuses the original outline on Scrolling outputs so native offscreen windows cannot cover the screen border.
+## Troubleshooting
 
-`Super+Left/Right` moves through the strip and wraps at its ends; `Super+Shift+arrows` moves the focused window to the monitor in that direction; `Super+Ctrl+Alt+Left/Right` swaps columns. `Alt+Tab` also cycles windows. Fullscreen/maximize still use their existing shortcuts. Other workspaces retain their layout. Choices are stored in `~/.config/wizarch/workspace-layouts.json` and loaded through the generated `~/.config/hypr/wizarch-layouts.lua` fragment. `Super+L` continues to lock the screen. The Lua module reconciles column widths after open/close/focus and workspace events, with a 500 ms fallback for layout changes; it counts distinct native columns so vertically stacked windows do not create false peeks. Existing manual resize shortcuts remain effective until column membership/layout changes. Screen frame, pill, and the Settings window-spacing value are independent of this behavior.
+- **Shell fails to start or panels do not open**: Check Quickshell logs and Hyprland config errors from inside your session:
+  ```sh
+  qs log -t 40
+  hyprctl configerrors
+  ```
+- **Notification conflict**: If another daemon owns `org.freedesktop.Notifications`, stop/disable it (`systemctl --user disable --now mako` / `dunst` / `swaync`) and restart `qs`.
+- **Fallback colors instead of a theme pack**: Verify your active snapshot or repair desktop/theme state with:
+  ```sh
+  python3 ~/.config/quickshell/services/themes.py recover
+  ```
+  If you want to generate custom seed themes or run schema/image validation, ensure `$XDG_DATA_HOME/wizarch/theme-runtime` has `quickshell/requirements-theme.lock` installed.
+- **Eclipse theme unavailable in the picker**: `eclipse` metadata (`quickshell/themes/eclipse/theme.json`) is bundled, while its third-party local wallpaper is intentionally not distributed in Git. Place your image at `~/.config/quickshell/themes/eclipse/assets/wallpaper.jpg` and click Refresh in Settings -> Appearance.
+- **Dimmed/disabled Quick Settings controls**: Brightness requires `/sys/class/backlight` and `systemd-logind`; Wi-Fi list/hotspot require NetworkManager (`nmcli`); Airplane/Wi-Fi toggles require writable `/dev/rfkill`; Battery saver requires `power-profiles-daemon`; Screen record requires `wf-recorder`.
 
-Minimized applications keep running. Restore sends only the selected window to the focused monitor’s current workspace, preserving the other monitors’ workspace choices. Floating geometry is clamped to the destination monitor, and fullscreen/pin state is restored. The tray refreshes when windows move or close. Window history lives only for the current Hyprland session. Resize uses the named minus/equal keys; adjust these in `examples/wizarch-windows.lua` for other keyboard layouts. Keep `Super+Q` available for your existing terminal shortcut.
+## Optional boot and sign-in theme
 
-Each monitor has its own nine workspace slots, displayed as 1–9 in that monitor’s pill. `Super+1…9`, `Super+Shift+1…9`, and `Super+scroll` operate on the focused monitor; other monitors keep their current workspace. `Super+D` shows/restores the desktop only on the focused monitor. Existing workspace names and layout choices are preserved. The monitor-to-workspace mapping is saved in `~/.config/wizarch/workspace-monitors.json`; generated monitor bindings and persistent workspace rules load from `~/.config/hypr/wizarch-workspaces.lua`. Reconnecting an output reuses its own slots.
+The repository also provides a Plymouth boot theme (`examples/plymouth/`), greetd/ReGreet config (`examples/greetd-config.toml`, `examples/regreet.toml`, `examples/regreet.css`), and `scripts/install-startup-security` for system-wide setup (`sudo`). Review every step in `scripts/install-startup-security` (greetd, mkinitcpio Plymouth hook, GRUB kernel parameter) before running it on a real machine.
 
-## Boot, sign-in, and lock
+## Repository layout and docs
 
-The repository includes a Wizarch Plymouth boot splash, a styled greetd/ReGreet sign-in screen offering the installed Hyprland sessions to all users, and a separate Hyprlock screen with a dark translucent silhouette over a blurred desktop capture. The [startup installer](scripts/install-startup-security) makes the system changes and prints the root account status before it enables the greeter. Run it from the repository root with `sudo` after reviewing its backup and boot-loader steps:
-
-```sh
-sudo bash scripts/install-startup-security
-```
-
-The installer backs up greetd, mkinitcpio, and GRUB configuration, installs the greeter and boot theme, regenerates the initramfs and GRUB configuration, then enables greetd for the next boot. Root is reserved for administration through `sudo` or a text console; no root desktop session is configured. If your machine uses another boot loader or initramfs tool, follow the [Arch Plymouth guide](https://wiki.archlinux.org/title/Plymouth) for that part instead. Hyprlock is a distinct post-login lock screen.
-
-Settings opens as a normal tiled window with a searchable category sidebar, grouped controls, theme previews and bundled wallpaper thumbnails. Use Ctrl+F to find a category; narrow windows use an icon sidebar. Appearance selects complete Wizarch theme packs, including their wallpaper and accent palette.
-
-The quick-action wheel stays open after `Super+W`: point and click a sector, or use direction arrows or Tab (Shift+Tab reverses) and Enter/Space. Escape, right-click, a centre/outside click or another `Super+W` cancels. Home/End select the first/last action. It offers Launcher, Calendar, Quick Settings, Notifications, Clipboard, Screenshot, Themes and Settings, and opens at the focused monitor’s center and moves the cursor to that same global logical point on opening. Closing leaves the cursor in place. The compact continuous ring uses the active Wizarch palette and shows icons with the selected action’s name, or Cancel in the center dead zone. Arrows select their cardinal direction; Tab cycles all eight actions. Its overlay reserves no desktop space.
-
-## Themes and source layout
-
-`quickshell/` is the shell source; `scripts/` contains the panel, desktop, and screenshot helpers; `examples/` contains the optional Hyprland integration. Theme definitions live under `quickshell/themes/<id>/`. The theme picker only lists themes whose assets are present.
-
-The **Eclipse** theme metadata is included, but its third-party Berserk wallpaper is not. To enable Eclipse, provide your own image at `~/.config/quickshell/themes/eclipse/assets/wallpaper.jpg`, then reopen the theme picker. Generated state under `quickshell/state/`, local backups, and development outputs are excluded from the repository.
+- `quickshell/` — QML shell, theme packs, schemas, icons, and Python service helpers ([quickshell/README.md](quickshell/README.md))
+- `scripts/` — Interactive `install.sh` / `uninstall.sh`, panel/workspace/screenshot helpers, `deploy-upgrade.py`, and optional startup setup
+- `examples/` — Hyprland Lua configs, `hyprlock.conf`, Plymouth/greetd configs, and sample Material collection (`examples/material-collection/`)
+- `tests/` — JS, Python, and Qt/Wayland test suites
+- `docs/`:
+  - [Geometry system](docs/geometry-system.md)
+  - [Media card](docs/media-card.md)
+  - [Runtime reliability and deployment](docs/design-preserving-upgrade.md)
+  - [Material theme authoring](docs/material-theme/AUTHORING.md)
+  - [Material theme role map](docs/material-theme/ROLE-MAP.md)
+  - [Material recovery & transactions](docs/material-theme/RECOVERY.md)
+  - [Desktop appearance sync](docs/material-theme/DESKTOP-APPEARANCE.md)
+  - [Future GitHub sources contract](docs/material-theme/GITHUB-CONTRACT.md)
 
 ## License
 
-Wizarch's repository source and included original assets are available under the [MIT License](LICENSE). Third-party assets are not included.
-
-The local Material theme pipeline, authoring, recovery and deferred source contracts are documented in [the Material theme completion report](docs/material-theme/COMPLETION-REPORT.md).
-
-Maintenance: [design-preserving upgrade and recovery](docs/design-preserving-upgrade.md) documents the bounded state readers, keyboard fixes, verification suites, and manifest-based deployment/restore workflow.
+Original source code and assets in Wizarch are released under the [MIT License](LICENSE). Third-party artwork is not distributed in this repository. Theme palette generation uses `material-color-utilities` (Apache-2.0, [docs/material-theme/GENERATOR-LICENSE.txt](docs/material-theme/GENERATOR-LICENSE.txt)).

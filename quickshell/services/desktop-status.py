@@ -13,7 +13,10 @@ def run(args):
 
 
 def backlight():
-    return next(iter(sorted(Path('/sys/class/backlight').iterdir())), None)
+    try:
+        return next(iter(sorted(Path('/sys/class/backlight').iterdir())), None)
+    except OSError:
+        return None
 
 
 def session_path():
@@ -33,17 +36,22 @@ def session_path():
 def status():
     wifi = False
     ethernet = False
-    for p in Path('/sys/class/net').iterdir():
-        try:
-            if (p / 'carrier').read_text().strip() == '1':
-                if (p / 'wireless').exists():
-                    wifi = True
-                elif p.name != 'lo' and not (p / 'device' / 'driver').resolve().name.startswith(('tun', 'veth')):
-                    ethernet = True
-        except OSError:
-            pass
-    radios = json.loads(run(['rfkill', '--json']))['rfkilldevices']
-    wlan = [r for r in radios if r['type'] == 'wlan']
+    net_dir = Path('/sys/class/net')
+    if net_dir.exists():
+        for p in net_dir.iterdir():
+            try:
+                if (p / 'carrier').read_text().strip() == '1':
+                    if (p / 'wireless').exists():
+                        wifi = True
+                    elif p.name != 'lo' and not (p / 'device' / 'driver').resolve().name.startswith(('tun', 'veth')):
+                        ethernet = True
+            except OSError:
+                pass
+    try:
+        radios = json.loads(run(['rfkill', '--json'])).get('rfkilldevices', [])
+    except (OSError, ValueError, KeyError, subprocess.SubprocessError):
+        radios = []
+    wlan = [r for r in radios if r.get('type') == 'wlan']
     device = backlight()
     try:
         location = run(['gsettings', 'get', 'org.gnome.system.location', 'enabled']).strip() == 'true'
@@ -76,7 +84,12 @@ def status():
     except (OSError, subprocess.SubprocessError):
         hibernate = False
     try:
-        os.kill(int((Path(os.environ.get('XDG_RUNTIME_DIR', '/tmp')) / 'wizarch-recording.pid').read_text()), 0)
+        user_run = Path(f'/run/user/{os.getuid()}')
+        runtime_dir = os.environ.get('XDG_RUNTIME_DIR') or (
+            str(user_run) if user_run.is_dir() and os.access(user_run, os.W_OK)
+            else str(Path(os.environ.get('XDG_CACHE_HOME', str(Path.home() / '.cache'))) / 'wizarch' / 'run')
+        )
+        os.kill(int((Path(runtime_dir) / 'wizarch-recording.pid').read_text()), 0)
         recording = True
     except (OSError, ValueError, ProcessLookupError):
         recording = False

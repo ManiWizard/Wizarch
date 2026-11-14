@@ -11,7 +11,16 @@ import sys
 import tempfile
 import stat
 
-BASE = Path(os.environ.get('XDG_RUNTIME_DIR', f'/run/user/{os.getuid()}'))
+def _runtime_base():
+    env = os.environ.get('XDG_RUNTIME_DIR')
+    if env:
+        return Path(env)
+    user_run = Path(f'/run/user/{os.getuid()}')
+    if user_run.is_dir() and os.access(user_run, os.W_OK):
+        return user_run
+    return Path(os.environ.get('XDG_CACHE_HOME', str(Path.home() / '.cache'))) / 'wizarch' / 'run'
+
+BASE = _runtime_base()
 KEY = re.sub(r'[^a-zA-Z0-9_-]', '_', os.environ.get('HYPRLAND_INSTANCE_SIGNATURE', 'session'))
 STATE = BASE / ('wizarch-workspaces-' + KEY + '.json')
 CONFIG = Path(os.environ.get('XDG_CONFIG_HOME', str(Path.home() / '.config')))
@@ -198,6 +207,7 @@ def main():
     args = parser.parse_args()
     if args.action in ('switch', 'move') and args.value is None:
         parser.error('switch/move requires a slot or next/prev')
+    STATE.parent.mkdir(parents=True, exist_ok=True)
     with open(str(STATE) + '.lock', 'w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         with (CONFIG / 'wizarch').joinpath('workspace-monitors.lock').open('a') as config_lock:

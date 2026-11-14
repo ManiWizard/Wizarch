@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Clipboard history and insertion into the window focused before Wizarch opened."""
 import json
+import os
 import re
 from pathlib import Path
 import subprocess
 import sys
 import time
 
-FOCUS = Path.home() / '.cache' / 'wizarch' / 'previous-window'
+FOCUS = Path(os.environ.get('XDG_CACHE_HOME', str(Path.home() / '.cache'))) / 'wizarch' / 'previous-window'
 
 
 def paste(data):

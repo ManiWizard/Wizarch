@@ -167,8 +167,15 @@ def main():
     if args.address and not re.fullmatch(r"0x[0-9a-fA-F]+", args.address):
         parser.error("Expected a hexadecimal window address")
     key = re.sub(r"[^a-zA-Z0-9_-]", "_", os.environ.get("HYPRLAND_INSTANCE_SIGNATURE", "session"))
-    runtime = os.environ.get("XDG_RUNTIME_DIR", f"/run/user/{os.getuid()}")
-    path = Path(runtime) / ("wizarch-windows-" + key + ".json")
+    runtime = os.environ.get("XDG_RUNTIME_DIR")
+    if runtime:
+        runtime_path = Path(runtime)
+    elif Path(f"/run/user/{os.getuid()}").is_dir() and os.access(f"/run/user/{os.getuid()}", os.W_OK):
+        runtime_path = Path(f"/run/user/{os.getuid()}")
+    else:
+        runtime_path = Path(os.environ.get("XDG_CACHE_HOME", str(Path.home() / ".cache"))) / "wizarch" / "run"
+    runtime_path.mkdir(parents=True, exist_ok=True)
+    path = runtime_path / ("wizarch-windows-" + key + ".json")
     with path.with_suffix(".lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX)
         controls = Controls(path)

@@ -36,10 +36,22 @@ def ipc(target, method, *arguments):
         if time.monotonic()>=deadline: raise ValueError('The shell is still reloading; try again')
         time.sleep(.05)
 
+def runtime_dir():
+    env = os.environ.get('XDG_RUNTIME_DIR')
+    if env:
+        return Path(env)
+    user_run = Path(f'/run/user/{os.getuid()}')
+    if user_run.is_dir() and os.access(user_run, os.W_OK):
+        return user_run
+    fallback = Path(os.environ.get('XDG_CACHE_HOME', str(Path.home() / '.cache'))) / 'wizarch/run'
+    fallback.mkdir(parents=True, exist_ok=True)
+    return fallback
+
 def toggle():
     # Serialize repeated keybindings across helpers; closing never queries or moves
     # the pointer. Capture the previous app before a warp can change focus.
-    runtime=Path(os.environ.get('XDG_RUNTIME_DIR',f'/run/user/{os.getuid()}'))
+    runtime=runtime_dir()
+    runtime.mkdir(parents=True,exist_ok=True)
     with (runtime/'wizarch-quick-wheel.lock').open('a') as lock:
         fcntl.flock(lock,fcntl.LOCK_EX)
         state=ipc('quick-wheel','isOpen')

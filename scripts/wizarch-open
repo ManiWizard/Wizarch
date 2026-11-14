@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Toggle a Wizarch panel on the currently focused monitor."""
-import json,subprocess,sys
+import json,os,subprocess,sys
 from pathlib import Path
 try:
     section=sys.argv[1]
@@ -9,7 +9,7 @@ try:
         window=json.loads(subprocess.check_output(['hyprctl','activewindow','-j'],text=True,timeout=3))
         address=window.get('address','')
         if address.startswith('0x'):
-            focus_file=Path.home()/'.cache'/'wizarch'/'previous-window'
+            focus_file=Path(os.environ.get('XDG_CACHE_HOME',str(Path.home()/'.cache')))/'wizarch'/'previous-window'
             focus_file.parent.mkdir(parents=True,exist_ok=True)
             focus_file.write_text(address)
     monitors=json.loads(subprocess.check_output(['hyprctl','monitors','-j'],text=True,timeout=3))

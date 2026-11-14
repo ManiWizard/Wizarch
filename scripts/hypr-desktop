@@ -1,2 +1,2 @@
 #!/bin/sh
-exec python3 "$HOME/.config/quickshell/services/workspaces.py" desktop
+exec python3 "${XDG_CONFIG_HOME:-$HOME/.config}/quickshell/services/workspaces.py" desktop

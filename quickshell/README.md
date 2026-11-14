@@ -1,19 +1,20 @@
 # Wizarch Quickshell source
 
-This directory contains the QML shell, service helpers, icons, and theme assets. For screenshots, dependencies, manual installation, shortcuts, and licensing, see the [repository README](../README.md).
+This directory contains the QML shell (`shell.qml`, `core/`, `components/`, `panels/`), Python service helpers (`services/`), icons (`assets/`), JSON schemas (`schemas/`), and bundled theme metadata (`themes/`). For installation, uninstallation, package requirements, keybindings, and troubleshooting, see the [repository README](../README.md).
 
-The `state/active.json` file is generated for each installation and is not committed. The optional Eclipse theme appears in the theme picker only after you supply its excluded wallpaper asset.
+## Runtime notes
 
-Window spacing is adjustable in Settings from 0–150%, with a default of 75%. The original 100% profile uses 5 px inner and 20 px outer gaps; values round to whole pixels. Changes apply live, save in the shell preferences, and generate `~/.config/hypr/wizarch-spacing.lua`. The example Hyprland Lua configuration loads that fragment on reload/login.
+- **Theme state (`$XDG_STATE_HOME/wizarch/theme/active.json`)**: Generated on first startup or via `themes.py init wizarch`; not committed to Git. If unavailable, `core/Fallback.js` supplies a usable built-in palette. The bundled `eclipse` pack stays flagged diagnostic/unavailable until you place your local image at `themes/eclipse/assets/wallpaper.jpg`.
+- **Window spacing**: Configurable in Settings -> Multitasking (`0–150%`, default `75%`, where `100%` corresponds to `5 px` inner / `20 px` outer gaps). Applies live through `services/window-spacing.py` and persists to `$XDG_CONFIG_HOME/hypr/wizarch-spacing.lua`.
+- **Workspaces & Scrolling**: Nine independent slots per monitor (`services/workspaces.py`) plus remembered Dwindle/Scrolling choices (`services/layouts.py`).
+- **Quick-Action Wheel**: Triggered via `Super+W` (`services/quick-wheel.py`), centering the cursor and wheel overlay on the focused monitor without reserving desktop space.
+- **Settings**: Managed tiled window (`SettingsWindow.qml`) with `Ctrl+F` search across 12 categories, collapsing to an icon rail below `820 px`, plus preference coalescing and an explicit Retry banner on write errors.
 
-Reliability behavior: calendar week headings follow their actual dates; launcher drag release explicitly completes drops, with group center for membership and 16 px side zones for ordering. `Super+V` opens clipboard and `Super+Shift+V` toggles window floating. Settings/themes IPC opens the shared managed Settings window, tiled by default without toggling it closed. Preference writes coalesce for 180 ms through one writer; failed changes remain queued with Retry in settings. Moving away from the top-center reveal target cancels pending reveal.
+## Documentation & tests
 
-Settings uses a normal tiled application window with a searchable category sidebar (Ctrl+F), grouped controls, theme previews and bundled wallpaper thumbnails. The navigation becomes an icon rail below 820 px. Appearance previews select complete theme packs; wallpaper thumbnails apply their theme, and the colour swatches show the current palette. Panel contains placement, auto-hide and screen-frame preferences; Sound, Notifications, Multitasking, Displays, Power, Wi-Fi, Bluetooth, Network and Keyboard have separate pages. Save failures and Retry remain visible across all pages.
+- [Geometry system](../docs/geometry-system.md)
+- [Media card](../docs/media-card.md)
+- [Runtime reliability & deployment](../docs/design-preserving-upgrade.md)
+- Material theming: [Authoring](../docs/material-theme/AUTHORING.md), [Recovery](../docs/material-theme/RECOVERY.md), [Role map](../docs/material-theme/ROLE-MAP.md), [Desktop appearance](../docs/material-theme/DESKTOP-APPEARANCE.md), and [GitHub contract](../docs/material-theme/GITHUB-CONTRACT.md) (remote GitHub importing is unimplemented in this build).
 
-The quick-action wheel opens with `Super+W`, while `Super+C` keeps closing the focused window. Arrows select their cardinal direction; Tab/Shift+Tab cycle all eight actions and Enter/Space confirm; Escape, right-click or a centre/outside click cancels. Mouse movement highlights sectors and a left click confirms. The focused monitor receives a transparent overlay with a compact continuous ring, icons and a selection arc using the active Wizarch palette. The circular hub shows the selected action name or Cancel in the dead zone. Both wheel and real cursor open at that monitor’s center; closing never moves the cursor. It reserves no desktop space. All eight entries route to existing shell panels, Settings/Themes or the installed screenshot tool. Clipboard captures the app focused before the wheel opened.
-
-Regression checks: run `node tests/reliability.js`, `python3 tests/reliability.py`, `python3 tests/preference-writer-qt.py`, and `python3 tests/settings-window-qt.py` from the repository. The Qt test needs the existing Quickshell/Wayland session and uses an isolated temporary preference store. No live user preference values are changed by these tests.
-
-Wheel regression checks: `node tests/quick-wheel.js`, `python3 tests/quick-wheel.py`, and `python3 tests/quick-wheel-qt.py`. The Qt check requires the existing Wayland session, briefly maps a wheel with an isolated action sink, and performs no real shell action.
-
-Material themes: see [authoring](../docs/material-theme/AUTHORING.md), [recovery](../docs/material-theme/RECOVERY.md), and the [completion report](../docs/material-theme/COMPLETION-REPORT.md) for the local pipeline and verification evidence. GitHub transport and update execution remain deferred.
+See `tests/` for the JS, Python, and Qt/Wayland test suites (`tests/upgrade-checks.py` runs the non-live check suite).

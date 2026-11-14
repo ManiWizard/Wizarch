@@ -9,7 +9,16 @@ import subprocess
 import sys
 from datetime import datetime
 
-PID_FILE = Path(os.environ.get('XDG_RUNTIME_DIR', '/tmp')) / 'wizarch-recording.pid'
+def _runtime_dir():
+    env = os.environ.get('XDG_RUNTIME_DIR')
+    if env:
+        return Path(env)
+    user_run = Path(f'/run/user/{os.getuid()}')
+    if user_run.is_dir() and os.access(user_run, os.W_OK):
+        return user_run
+    return Path(os.environ.get('XDG_CACHE_HOME', str(Path.home() / '.cache'))) / 'wizarch' / 'run'
+
+PID_FILE = _runtime_dir() / 'wizarch-recording.pid'
 
 
 def pid():
@@ -29,12 +38,13 @@ if action == 'toggle':
         PID_FILE.unlink(missing_ok=True)
         current = None
     elif shutil.which('wf-recorder'):
-        videos = Path.home() / 'Videos'
+        videos = Path(os.environ.get('XDG_VIDEOS_DIR', str(Path.home() / 'Videos')))
         videos.mkdir(parents=True, exist_ok=True)
         output = videos / ('Wizarch-' + datetime.now().strftime('%Y%m%d-%H%M%S') + '.mp4')
         process = subprocess.Popen(['wf-recorder', '-f', str(output)],
                                    stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
                                    stderr=subprocess.DEVNULL, start_new_session=True)
+        PID_FILE.parent.mkdir(parents=True, exist_ok=True)
         PID_FILE.write_text(str(process.pid))
         current = process.pid
     else:
