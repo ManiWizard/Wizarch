@@ -1,6 +1,6 @@
 -- Individual-window controls for Wizarch (Hyprland 0.56 Lua API).
-local helper = "python3 $HOME/.config/quickshell/services/windows.py "
-local layout_helper = "python3 $HOME/.config/quickshell/services/layouts.py toggle "
+local helper = 'python3 "$HOME/.config/quickshell/services/windows.py" '
+local layout_helper = 'python3 "$HOME/.config/quickshell/services/layouts.py" toggle '
 -- Native side peeks: one full-size column, or large 96% columns centered
 -- around focus. The remaining 2% on each side shows the actual adjacent app.
 hl.config({ scrolling = { column_width = 0.96, fullscreen_on_one_column = true,
@@ -109,8 +109,9 @@ local function selected_window(action)
     return function()
         local window = hl.get_active_window()
         if window then
-            -- Capture the target before spawning the asynchronous worker.
-            hl.dispatch(hl.dsp.exec_cmd(helper .. action .. " " .. window.address))
+            -- Capture and shell-quote the target before spawning the asynchronous worker.
+            local addr = "'" .. tostring(window.address):gsub("'", "'\\''") .. "'"
+            hl.dispatch(hl.dsp.exec_cmd(helper .. action .. " " .. addr))
         end
     end
 end
@@ -133,7 +134,9 @@ bind("SUPER + CTRL + L", "Toggle Dwindle/Scrolling on this workspace", function(
     local workspace = hl.get_active_workspace()
     if workspace then
         -- Shell-quote the captured selector; names can contain spaces or quotes.
-        local selector = "'" .. workspace.config_name:gsub("'", "'\\''") .. "'"
+        local raw = workspace.name
+        local target = (raw and raw ~= "" and not raw:match("^%d+$")) and ("name:" .. raw) or tostring(workspace.id)
+        local selector = "'" .. target:gsub("'", "'\\''") .. "'"
         hl.dispatch(hl.dsp.exec_cmd(layout_helper .. selector))
     end
 end)

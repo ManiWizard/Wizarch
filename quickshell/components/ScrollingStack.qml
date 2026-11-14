@@ -10,7 +10,7 @@ import "../core" as Core
 // Large app pages form a recessed stack in the right gutter. Rendering and input
 // are clipped to the exposed edges, inside the frame and below the pill.
 PanelWindow {
-    property var uiGeometry: Core.Geometry.contextFor(parent)
+    property var uiGeometry: Core.GeometryContext { uiScale: Core.Geometry.scaleForOutput(stack.modelData.name); devicePixelRatio: stack.devicePixelRatio }
 
     id: stack
     required property var modelData

@@ -11,7 +11,7 @@ import sys
 import tempfile
 import stat
 
-BASE = Path(os.environ['XDG_RUNTIME_DIR'])
+BASE = Path(os.environ.get('XDG_RUNTIME_DIR', f'/run/user/{os.getuid()}'))
 KEY = re.sub(r'[^a-zA-Z0-9_-]', '_', os.environ.get('HYPRLAND_INSTANCE_SIGNATURE', 'session'))
 STATE = BASE / ('wizarch-workspaces-' + KEY + '.json')
 CONFIG = Path(os.environ.get('XDG_CONFIG_HOME', str(Path.home() / '.config')))

@@ -4,7 +4,12 @@ hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
 
 -- Load this from the end of your existing ~/.config/hypr/hyprland.lua.
 -- Initialize Wizarch first so wizarch-theme.lua exists.
-dofile((os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")) .. "/hypr/wizarch-theme.lua")
+do
+    local config_home = os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")
+    local theme = config_home .. "/hypr/wizarch-theme.lua"
+    local file = io.open(theme, "r")
+    if file then file:close(); dofile(theme) end
+end
 -- Load the spacing saved by Quickshell settings, when available.
 do
     local config_home = os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")
@@ -27,24 +32,24 @@ do
     if file then file:close(); dofile(workspaces) end
 end
 
-local open = "$HOME/.local/bin/wizarch-open "
+local open = '"$HOME/.local/bin/wizarch-open" '
 hl.bind("SUPER + SPACE",   hl.dsp.exec_cmd(open .. "launcher"))
 hl.bind("SUPER + ALT + C", hl.dsp.exec_cmd(open .. "clock"))
 hl.bind("SUPER + ALT + Q", hl.dsp.exec_cmd(open .. "status"))
 hl.bind("SUPER + ALT + N", hl.dsp.exec_cmd(open .. "notifications"))
 hl.bind("SUPER + ALT + T", hl.dsp.exec_cmd(open .. "themes"))
-hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock --config $HOME/.config/hypr/hyprlock.conf"))
+hl.bind("SUPER + L", hl.dsp.exec_cmd('hyprlock --config "$HOME/.config/hypr/hyprlock.conf"'))
 hl.bind("SUPER + V", hl.dsp.exec_cmd(open .. "clipboard"))
 hl.bind("SUPER + PERIOD", hl.dsp.exec_cmd(open .. "emoji"))
 
 for i = 1, 9 do
-    hl.bind("SUPER + " .. i, hl.dsp.exec_cmd("python3 $HOME/.config/quickshell/services/workspaces.py switch " .. i))
-    hl.bind("SUPER + SHIFT + " .. i, hl.dsp.exec_cmd("python3 $HOME/.config/quickshell/services/workspaces.py move " .. i))
+    hl.bind("SUPER + " .. i, hl.dsp.exec_cmd('python3 "$HOME/.config/quickshell/services/workspaces.py" switch ' .. i))
+    hl.bind("SUPER + SHIFT + " .. i, hl.dsp.exec_cmd('python3 "$HOME/.config/quickshell/services/workspaces.py" move ' .. i))
 end
-hl.bind("SUPER + mouse_down", hl.dsp.exec_cmd("python3 $HOME/.config/quickshell/services/workspaces.py switch next"))
-hl.bind("SUPER + mouse_up",   hl.dsp.exec_cmd("python3 $HOME/.config/quickshell/services/workspaces.py switch prev"))
-hl.bind("SUPER + D", hl.dsp.exec_cmd("$HOME/.local/bin/hypr-desktop"))
-hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("$HOME/.local/bin/hypr-screenshot"))
+hl.bind("SUPER + mouse_down", hl.dsp.exec_cmd('python3 "$HOME/.config/quickshell/services/workspaces.py" switch next'))
+hl.bind("SUPER + mouse_up",   hl.dsp.exec_cmd('python3 "$HOME/.config/quickshell/services/workspaces.py" switch prev'))
+hl.bind("SUPER + D", hl.dsp.exec_cmd('"$HOME/.local/bin/hypr-desktop"'))
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd('"$HOME/.local/bin/hypr-screenshot"'))
 
 hl.window_rule({
     name = "wizarch-settings",
@@ -54,4 +59,9 @@ hl.window_rule({
 })
 
 -- Individual-window controls, including reversible minimize and floating pin.
-dofile(os.getenv("HOME") .. "/.config/hypr/wizarch-windows.lua")
+do
+    local config_home = os.getenv("XDG_CONFIG_HOME") or (os.getenv("HOME") .. "/.config")
+    local windows = config_home .. "/hypr/wizarch-windows.lua"
+    local file = io.open(windows, "r")
+    if file then file:close(); dofile(windows) end
+end
