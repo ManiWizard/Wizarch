@@ -1,0 +1,39 @@
+{
+  "nestedCompositorStopped": 458998,
+  "privateBusStopped": 459196,
+  "noRemainingVerificationShells": true,
+  "liveCalendarRestoredClosed": true,
+  "liveSelection": {
+    "identity": "bundled:wizarch",
+    "mode": "dark",
+    "revision": "ab64ddc83832727ee9bf95fd89115f93f2844e874a6de8dd5d179e7fa7f75d0c",
+    "schemaVersion": 1,
+    "wallpaperId": "nocturne"
+  },
+  "privateAssetsNotRedistributed": true,
+  "priorVerificationSession": {
+    "compositor": 414610,
+    "privateBus": 416685
+  },
+  "verificationSessionStoppedAfterFinalScreenshotsAndPerformance": true,
+  "reviewVerificationSession": {
+    "compositorStopped": 504707,
+    "privateBusStopped": 504932,
+    "noRemainingVerificationShells": true,
+    "unrelatedLauncherVerificationSessionPreserved": true
+  },
+  "liveSelectionAtReviewCleanup": {
+    "identity": "bundled:wizarch",
+    "mode": "dark",
+    "revision": "ab64ddc83832727ee9bf95fd89115f93f2844e874a6de8dd5d179e7fa7f75d0c",
+    "schemaVersion": 1,
+    "wallpaperId": "nocturne"
+  },
+  "laterObservedLiveSelection": {
+    "identity": "bundled:eclipse",
+    "mode": "light",
+    "revision": "90c86ca3ddfcd05908253c3494e5b741b628cb1947dcb2dfd733d0eae555d071",
+    "schemaVersion": 1,
+    "wallpaperId": "original"
+  }
+}

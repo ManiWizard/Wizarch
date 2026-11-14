@@ -1,0 +1,16 @@
+skip_selection = true
+
+[background]
+path = "/etc/greetd/wizarch-background.png"
+fit = "Cover"
+
+[GTK]
+application_prefer_dark_theme = true
+font_name = "Noto Sans 12"
+
+[appearance]
+greeting_msg = "Wizarch"
+
+[widget.clock]
+format = "%H:%M  ·  %A, %B %-d"
+resolution = "1s"

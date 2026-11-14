@@ -1,2 +1,5 @@
 singleton Theme 1.0 Theme.qml
 singleton Workspaces 1.0 Workspaces.qml
+singleton Geometry 1.0 Geometry.qml
+GeometryContext 1.0 GeometryContext.qml
+StateReader 1.0 StateReader.qml

@@ -7,3 +7,6 @@
 
 # Optional third-party Eclipse wallpaper (provide locally if desired)
 /quickshell/themes/eclipse/assets/wallpaper.jpg
+
+# Python verification/runtime bytecode
+**/__pycache__/

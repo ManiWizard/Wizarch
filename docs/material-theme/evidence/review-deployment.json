@@ -1,0 +1,179 @@
+{
+  "files": [
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/storage.py",
+      "source": "quickshell/services/theming/storage.py",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/services/theming/storage.py",
+      "beforeSha256": "cf63dd1f4ecbec68db692b5b96ecd2141a9cea5a036260b54514ca588a2264d7",
+      "afterSha256": "87b3add080595b54414ac0a4e2e547f81804be686a2d8d55ed9336abe97b454b"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/color.py",
+      "source": "quickshell/services/theming/color.py",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/services/theming/color.py",
+      "beforeSha256": "2ed3b927bfe52a10d52ae353fb061a45c706d64ca7978adab9fec3ed72125a3c",
+      "afterSha256": "063ada52f16be84bee64ddb4b353b5158590f80bb28bc8ff729a44fb81461498"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/catalog.py",
+      "source": "quickshell/services/theming/catalog.py",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/services/theming/catalog.py",
+      "beforeSha256": "76f320e676059910af863cd6f470d5ac45add28fb068440bacf5800fa5b7c664",
+      "afterSha256": "ec1edbb1ae9d86a541afc49e6e5a3a24dc29d1e53776e6b732ff78e2f4c62124"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/providers.py",
+      "source": "quickshell/services/theming/providers.py",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/services/theming/providers.py",
+      "beforeSha256": "c71b7f3b9176a53911da8d77d20a47a92558a56593fbf4571c7dd826900f2936",
+      "afterSha256": "1c008c8338d602784f4b816f11a025f7f781d7154b9fb02dcb1fe0b0b53c106e"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/watch.py",
+      "source": "quickshell/services/theming/watch.py",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/services/theming/watch.py",
+      "beforeSha256": "45d5895beec7bcfc6cf27899fcd1b6cd5f7d2f3dc00ea2c718327a10e6df3e98",
+      "afterSha256": "be8bc852c5b0018a2eba5d3cfe2f0dc30b84a88bc1ea9a1f9393c8289c185ca8"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/themes.py",
+      "source": "quickshell/services/themes.py",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/services/themes.py",
+      "beforeSha256": "6ef8b27d58ef7cabda556fb2a154c6a1760677544d02cdbad0e82024480547ea",
+      "afterSha256": "a994958aa8dabf5210f92360d4c2e21404b3e2feec227b58c46a0550cc785a25"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/core/Theme.qml",
+      "source": "quickshell/core/Theme.qml",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/core/Theme.qml",
+      "beforeSha256": "a60ffb50c2cebe758947ad2983cff6ecf3acbfbd15a0d8013d29fd88445a58c4",
+      "afterSha256": "3e690d0c3057b5a8e8a221d04ecb0d83f73343e1a4cbb49d18781cf4c60ef42c"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/SettingsView.qml",
+      "source": "quickshell/panels/SettingsView.qml",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/panels/SettingsView.qml",
+      "beforeSha256": "089e21157cf309b251e930e8de6267f16ba95fc4d59a6b09691339ec2f2f156f",
+      "afterSha256": "0ef81aede2118c58136335e37e65a58223314dc36e88102b1ee8becda929f0d7"
+    }
+  ],
+  "preservedSha256": {
+    "/home/Mw/.local/state/wizarch/theme/active.json": "a6eb35593868b379ac6d24b819cfc5ce0afdcb110bdb27061958d61f1d2a14a3",
+    "/home/Mw/.config/wizarch/theme-selection.json": "14d65145def03b7443e29ae76b34a8f3a3c3906d6337775da714cedf28c802de",
+    "/home/Mw/.config/hypr/wizarch-theme.lua": "761537eccf6cd1f9cba0c0ab6e5d1d6d2078423def419467774ee50f17e41713",
+    "/home/Mw/.config/wizarch/preferences.json": "0b2bfc1be0981eb99532161a4aad4c26ac2612be0f2f35308c117a2605365e05",
+    "/home/Mw/.config/hypr/hyprland.lua": "7392f96e5fc36616e5f006492989b11a0bc97d292a739e34108aca61821afa6c",
+    "/home/Mw/.config/hypr/wizarch-theme-geometry.lua": "0340dcebba1120a7cc85db8671e55b1cd3400a08cb7b68ee0d548820edfc4819",
+    "/home/Mw/.config/quickshell/core/SystemServices.qml": "10e6c201a6e05a842c7cdbdee4c83e3b7d0cf199b7f17a9e680abab3fca15f2c",
+    "/home/Mw/.config/quickshell/core/Workspaces.qml": "b6791ad4a82d6c153287e9888cf86378e02351c9efabb52492c1077c2476b359",
+    "/home/Mw/.config/quickshell/shell.qml": "c223c3a5b65bc27c5f80ae25c2db9ebeb3b133b2c353f45407c320b578f2b5d5",
+    "/home/Mw/.config/quickshell/services/workspaces.py": "deb215935bc73c837afa4b8f0d5c4515c1c291c9ce7054190506337d847483eb",
+    "/home/Mw/.config/quickshell/panels/QuickSettings.qml": "2304c4eefcb1440b6857bde750ba9637347f73427588d3244b7a6d59298c1f0e",
+    "/home/Mw/.config/quickshell/state/active.json": "f3c27905880d15860a332e8e47dfa2a83ec91465a2b7c4ceb4d7823b389c49e1",
+    "/home/Mw/.config/quickshell/themes/eclipse/assets/wallpaper.jpg": "b8d34d0b101719eb7d10b2f8decba7e9b91a5e04e7fd257e0e294b37a1cc7f5e"
+  },
+  "selection": {
+    "identity": "bundled:wizarch",
+    "mode": "dark",
+    "revision": "ab64ddc83832727ee9bf95fd89115f93f2844e874a6de8dd5d179e7fa7f75d0c",
+    "schemaVersion": 1,
+    "wallpaperId": "nocturne"
+  },
+  "compositorErrorsBefore": "\n\n",
+  "hostShellPid": 1029,
+  "deployed": true,
+  "liveStateBackups": [
+    {
+      "path": "/home/Mw/.local/state/wizarch/theme/active.json",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/live-state/active.json"
+    },
+    {
+      "path": "/home/Mw/.config/wizarch/theme-selection.json",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/live-state/theme-selection.json"
+    },
+    {
+      "path": "/home/Mw/.config/hypr/wizarch-theme.lua",
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-review-backup/live-state/wizarch-theme.lua"
+    }
+  ],
+  "sourceReloadOnly": true,
+  "compositorErrorsAfter": "\n\n",
+  "allPreservedHashesMatch": true,
+  "liveRender": {
+    "path": "/home/Mw/Documents/Codex/Wizarch/outputs/material-theme/live-reviewed-wizarch-dark-calendar-crop.png",
+    "crop": "792,15 336x115",
+    "surface": "inside read-only calendar body; restored previously closed/auto-hidden panel; no device setter",
+    "rolePixelCounts": {
+      "surface": 35639,
+      "onSurface": 36,
+      "primary": 0
+    },
+    "pixelTolerance": 8,
+    "revision": "ab64ddc83832727ee9bf95fd89115f93f2844e874a6de8dd5d179e7fa7f75d0c"
+  },
+  "steadyStateQmlErrors": [],
+  "successfulConfigurationLog": [
+    "2026-10-09 03:17:52.554  WARN scene: QML FileView at @core/Theme.qml[58:2]: Read of /home/Mw/.local/state/wizarch/theme/active.json failed: File does not exist.",
+    "2026-10-09 04:08:12.956  INFO: Reloading configuration...",
+    "2026-10-09 04:08:13.202  INFO: Configuration Loaded",
+    "2026-10-09 05:10:10.185  INFO: Reloading configuration...",
+    "2026-10-09 05:10:10.458  INFO: Configuration Loaded"
+  ],
+  "monitors": [
+    {
+      "name": "eDP-1",
+      "width": 1920,
+      "height": 1080,
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "reserved": [
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "name": "HDMI-A-1",
+      "width": 1920,
+      "height": 1080,
+      "x": 1920,
+      "y": 0,
+      "scale": 1,
+      "reserved": [
+        10,
+        10,
+        10,
+        10
+      ]
+    }
+  ],
+  "laterIndependentLiveChanges": {
+    "selection": {
+      "identity": "bundled:eclipse",
+      "mode": "light",
+      "revision": "90c86ca3ddfcd05908253c3494e5b741b628cb1947dcb2dfd733d0eae555d071",
+      "schemaVersion": 1,
+      "wallpaperId": "original"
+    },
+    "changedThemeStateHashes": [
+      {
+        "path": "/home/Mw/.local/state/wizarch/theme/active.json",
+        "preservedAtDeploymentSha256": "a6eb35593868b379ac6d24b819cfc5ce0afdcb110bdb27061958d61f1d2a14a3",
+        "laterObservedSha256": "9e392897b8651c05ba1ea460d7cf3ecbc116d9d746cc54c0f420793c5f818631"
+      },
+      {
+        "path": "/home/Mw/.config/wizarch/theme-selection.json",
+        "preservedAtDeploymentSha256": "14d65145def03b7443e29ae76b34a8f3a3c3906d6337775da714cedf28c802de",
+        "laterObservedSha256": "25fd58aedefbcc738e96eb7ad697f8f63aa29d326f7eac5df24a3ae5256f58f1"
+      },
+      {
+        "path": "/home/Mw/.config/hypr/wizarch-theme.lua",
+        "preservedAtDeploymentSha256": "761537eccf6cd1f9cba0c0ab6e5d1d6d2078423def419467774ee50f17e41713",
+        "laterObservedSha256": "695fe467fb2a1f37bdeeda79d52a5c98b486136b95083b08fadd6ad740276fb9"
+      }
+    ],
+    "meaning": "Observed after successful before/after deployment preservation checks; no restoration or live mutation by this follow-up."
+  }
+}

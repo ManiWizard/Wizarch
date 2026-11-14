@@ -1,0 +1,1 @@
+PASS: 133 actual screenshots; 6 mode behavior cases; nested compositor errors empty

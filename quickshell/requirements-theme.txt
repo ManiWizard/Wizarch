@@ -1,0 +1,5 @@
+# Install into a project or user virtualenv, never system Python.
+material-color-utilities==0.2.6
+jsonschema==4.26.0
+Pillow==12.3.0
+numpy==2.5.3

@@ -1,0 +1,28 @@
+{
+  "sourceHash": "9c3a852b558a62106a29641df6858bc05ccf91a627645929dcfbb2a29a6ef76b",
+  "actualCaptures": 175,
+  "contactsAreDerivedNotAdditionalCaptures": true,
+  "inspected": [
+    "six panel contact sheets and six all-page contact sheets (earlier inspection)",
+    "all 36 final controls on controls-contact.png",
+    "eclipse-dark-appearance-literal-metadata crop",
+    "aurora-highcontrast-light-search-selection crop",
+    "wizarch-dark-apps-tooltip crop",
+    "aurora-highcontrast-light-launcher-context-menu crop",
+    "wizarch-light-appearance-mode-popup crop",
+    "full bundled calendar/Quick Settings/light Appearance and custom Quick Settings (earlier inspection)",
+    "live installed Eclipse dark calendar crop",
+    "final three override contact renders; cards/swatches agree with applied and edited-active palettes",
+    "fresh live Wizarch dark calendar crop; surface and text role pixels verified"
+  ],
+  "findings": [
+    "literal metadata displays angle brackets as ordinary text; Qt property checks independently prove PlainText",
+    "selection ink/background, caret, context menu, mode popup and inverse tooltip are rendered in each of six modes",
+    "tonal hierarchy, critical urgency cue, selected/disabled distinction and original placement preserved in inspected images"
+  ],
+  "limitations": [
+    "contact sheets are scaled and are not contrast evidence; numeric role/state checks accompany them",
+    "device data is deterministic fixture data; private art retained locally only",
+    "concurrent launcher edits appeared after the matrix snapshot and were not included in these renders"
+  ]
+}

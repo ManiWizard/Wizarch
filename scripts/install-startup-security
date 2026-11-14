@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if (( EUID != 0 )); then
+    printf 'Run with sudo from the repository root.\n' >&2
+    exit 1
+fi
+if [[ ! -f examples/greetd-config.toml || ! -f examples/plymouth/wizarch.plymouth ]]; then
+    printf 'Run from the Wizarch repository root.\n' >&2
+    exit 1
+fi
+
+printf 'Root account status: '
+passwd -S root || true
+printf 'Wizarch will not configure graphical auto-login for root.\n'
+
+pacman -S --needed greetd greetd-regreet cage hyprlock plymouth
+
+stamp=$(date +%Y%m%d-%H%M%S)
+if [[ -f /etc/greetd/config.toml ]]; then
+    cp -a /etc/greetd/config.toml "/etc/greetd/config.toml.wizarch-backup-$stamp"
+fi
+install -Dm644 examples/greetd-config.toml /etc/greetd/config.toml
+install -Dm644 examples/regreet.toml /etc/greetd/regreet.toml
+install -Dm644 examples/regreet.css /etc/greetd/regreet.css
+install -Dm644 quickshell/themes/wizarch/assets/wizarch-nocturne-4k.png /etc/greetd/wizarch-background.png
+install -Dm644 examples/plymouth/wizarch.plymouth /usr/share/plymouth/themes/wizarch/wizarch.plymouth
+install -Dm644 examples/plymouth/wizarch.script /usr/share/plymouth/themes/wizarch/wizarch.script
+install -Dm644 examples/plymouth/logo.png /usr/share/plymouth/themes/wizarch/logo.png
+plymouth-set-default-theme wizarch
+
+cp -a /etc/mkinitcpio.conf "/etc/mkinitcpio.conf.wizarch-backup-$stamp"
+python3 - <<'PY'
+from pathlib import Path
+import re
+p = Path('/etc/mkinitcpio.conf')
+source = p.read_text()
+match = re.search(r'^HOOKS=\(([^)]*)\)', source, re.M)
+if not match:
+    raise SystemExit('Could not find mkinitcpio HOOKS')
+hooks = match.group(1).split()
+if 'plymouth' not in hooks:
+    if 'udev' in hooks:
+        hooks.insert(hooks.index('udev') + 1, 'plymouth')
+    elif 'systemd' in hooks:
+        hooks.insert(hooks.index('systemd') + 1, 'plymouth')
+    else:
+        raise SystemExit('Unsupported mkinitcpio hook layout; restore backup and add plymouth manually')
+    p.write_text(source[:match.start()] + 'HOOKS=(' + ' '.join(hooks) + ')' + source[match.end():])
+PY
+mkinitcpio -P
+
+if [[ -f /etc/default/grub && -x /usr/bin/grub-mkconfig ]]; then
+    cp -a /etc/default/grub "/etc/default/grub.wizarch-backup-$stamp"
+    python3 - <<'PY'
+from pathlib import Path
+import re
+p = Path('/etc/default/grub')
+source = p.read_text()
+def add_splash(match):
+    args = match.group(1).split()
+    if 'splash' not in args:
+        args.append('splash')
+    return 'GRUB_CMDLINE_LINUX_DEFAULT="' + ' '.join(args) + '"'
+source, count = re.subn(r'^GRUB_CMDLINE_LINUX_DEFAULT="([^"]*)"', add_splash, source, count=1, flags=re.M)
+if count != 1:
+    raise SystemExit('Could not find GRUB_CMDLINE_LINUX_DEFAULT')
+p.write_text(source)
+PY
+    grub-mkconfig -o /boot/grub/grub.cfg
+else
+    printf 'Add the splash kernel parameter to your boot loader manually.\n' >&2
+fi
+
+printf 'Root is reserved for administration through sudo or a text console; no root desktop session is configured.\n'
+systemctl enable greetd.service
+printf 'Installed. Reboot when ready; greetd will offer Hyprland to all users.\n'

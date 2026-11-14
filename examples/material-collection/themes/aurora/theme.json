@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "aurora",
+  "name": "Aurora",
+  "version": "1.0.0",
+  "description": "Copyable three-key Material example",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "defaultMode": "dark",
+  "color": {
+    "type": "keys",
+    "keys": {
+      "primary": "#386a20",
+      "secondary": "#386663",
+      "tertiary": "#81517c"
+    },
+    "variant": "tonal-spot-three-key",
+    "contrast": 0.5
+  },
+  "wallpapers": [
+    {
+      "id": "dusk",
+      "name": "Dusk",
+      "path": "wallpapers/dusk.png",
+      "license": "CC0-1.0"
+    }
+  ],
+  "defaultWallpaper": "dusk",
+  "license": "MIT"
+}

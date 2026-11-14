@@ -1,0 +1,99 @@
+{
+  "requirements": [
+    {
+      "section": "1",
+      "requirement": "Detailed goal",
+      "authoritativeEvidence": "Original five paragraphs retained by goal tool; this report checklist and the following evidence audit",
+      "result": "delivered"
+    },
+    {
+      "section": "2",
+      "requirement": "Audit, active paths, unrelated work",
+      "authoritativeEvidence": "Task-start source/install hashes and git-status; dated audit read; deployment asserts byte preservation; SOURCE-INSTALL Quick Settings expression retained",
+      "result": "verified"
+    },
+    {
+      "section": "3",
+      "requirement": "Material semantics, pinned HCT, exports, three keys, fallback",
+      "authoritativeEvidence": "color.py real MCU API/version check; requirements lock and provenance/license; 27-test pipeline; 46 getters compared in each runtime case; eight schemes/704 numeric role/state pairs",
+      "result": "verified"
+    },
+    {
+      "section": "3",
+      "requirement": "Central semantic/component roles and exceptions",
+      "authoritativeEvidence": "ROLE-MAP.md all current surfaces; material-color-coverage.py classifies only OverlayShadow effect literals and external artwork; Qt controls and geometry runtime evidence",
+      "result": "verified"
+    },
+    {
+      "section": "4",
+      "requirement": "Schemas, authoring, safe assets/IDs, imports/catalog/preferences",
+      "authoritativeEvidence": "Eight strict schemas; canonical bundled exports; portable Aurora collection; finite/duplicate JSON and single-mode tests; symlink/image bounds; functional managed LocalProvider; inotify revision invalidation",
+      "result": "verified"
+    },
+    {
+      "section": "4",
+      "requirement": "Migration and independent selection/overrides",
+      "authoritativeEvidence": "Legacy fixtures and explicit bounded adapter; persistent modern selection; tests preserve compatible mode/wallpaper and overrides; live Eclipse dark/original retained; unavailable selection surfaces diagnostic/fallback",
+      "result": "verified"
+    },
+    {
+      "section": "5",
+      "requirement": "Serialized complete activation/recovery/rollback",
+      "authoritativeEvidence": "Cross-process flock; prepared journal and active commit point; last-good and prior exact bytes; phase interruption/rejection/finalization/rollback failure tests; real nested reloads empty errors; no live journal",
+      "result": "verified"
+    },
+    {
+      "section": "5",
+      "requirement": "Request ordering, caches, performance",
+      "authoritativeEvidence": "RECOVERY.md lock/coalescing/timeouts/commit protocol; bounded storage/cache; one watcher/descendant and 54\u219254 descriptors; before/after catalog and full production configuration-loading/compositor switch timings",
+      "result": "verified within bounded measurements"
+    },
+    {
+      "section": "6",
+      "requirement": "Appearance and every current interface/geometry/preservation",
+      "authoritativeEvidence": "Six theme/mode matrix cases, 11 Settings pages each; additional six-control captures; role getter assertions; preview cancellation/open query/calendar/morph preserved; outside-click/edge reveal and virtual monitor creation/removal",
+      "result": "verified in actual nested Wayland"
+    },
+    {
+      "section": "6",
+      "requirement": "Selective deployment and restored temporary state",
+      "authoritativeEvidence": "55 backed-up targets, 51 shell files; seven final followups; original preferences/assets/legacy state/label and unrelated files verified; static geometry12/2; live pid1029 unchanged; own compositor/bus stopped",
+      "result": "verified"
+    },
+    {
+      "section": "7",
+      "requirement": "Future GitHub sources contracts only",
+      "authoritativeEvidence": "GITHUB-CONTRACT.md, sources schema and non-operational GitHubProvider; URL pure fixtures only; no transport, schedules, publication, auth, clone/fetch or remote test",
+      "result": "delivered/deferred execution by explicit scope"
+    },
+    {
+      "section": "8",
+      "requirement": "Current tests, actual renders, numeric checks and inspection",
+      "authoritativeEvidence": "27 pipeline tests, existing regression/Qt/JS/Lua evidence; 171 actual captures/170 isolated with source hashes, notes and observed state; controls and representative full panels/contacts inspected; role/state numeric checks",
+      "result": "verified with named limitations"
+    },
+    {
+      "section": "8",
+      "requirement": "Unavailable verification",
+      "authoritativeEvidence": "Offscreen PanelWindow unsupported; device state represented by fixtures/unavailable services; physical hotplug/reboot/power-loss, complete keyboard/assistive audit, all GPUs/scales and long soak not executed",
+      "result": "unverified, disclosed; no invented evidence"
+    },
+    {
+      "section": "9",
+      "requirement": "Documentation, files, limitations and return handoff",
+      "authoritativeEvidence": "AUTHORING/ROLE-MAP/RECOVERY/GITHUB-CONTRACT and COMPLETION-REPORT; changed-file/installed-target hashes; screenshot indexes/performance; chat-workspace pointer; compact return prompt supplied at completion",
+      "result": "delivered"
+    }
+  ],
+  "meaning": "Available verification is finished. Bounded tests do not prove universal reliability or certify the explicitly listed unavailable cases. Remote execution is deferred by user instruction.",
+  "reviewFollowup": {
+    "findings": [
+      "R1 prospective catalog bounds/source isolation",
+      "R2 bounded descriptor reads/special files",
+      "R3 derived generation-cache recovery",
+      "R4 final compiled storage/idempotence"
+    ],
+    "proof": "13 review regressions plus 27 original pipeline tests; real override/card/apply/cancel assertions and screenshots; eight selectively deployed files with preserved live hashes",
+    "remainingUnverified": "physical power loss/hardware/long soak and concurrent launcher implementation; all remote execution remains deferred"
+  }
+}

@@ -1,0 +1,1 @@
+PASS: eight radial directions, centre/outside/invalid cancellation, keyboard wrap and edge clamping

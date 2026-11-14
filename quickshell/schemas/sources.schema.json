@@ -1,0 +1,181 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "integer"
+    },
+    "sources": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^github-[a-f0-9]{16}$"
+          },
+          "provider": {
+            "const": "github-deferred"
+          },
+          "canonicalUrl": {
+            "type": "string",
+            "pattern": "^https://github.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+          },
+          "requestedRef": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "pinnedRevision": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "resolvedRevision": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "selectedPackIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+            },
+            "maxItems": 128,
+            "uniqueItems": true
+          },
+          "autoUpdate": {
+            "type": "boolean"
+          },
+          "lastCheck": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 64
+          },
+          "lastResult": {
+            "enum": [
+              "never",
+              "unchanged",
+              "updated",
+              "offline",
+              "error",
+              "deferred"
+            ]
+          },
+          "installedVersion": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 256
+          },
+          "installedRevision": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "provenance": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "error": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 1024
+          },
+          "packPolicies": {
+            "type": "object",
+            "maxProperties": 128,
+            "propertyNames": {
+              "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+            },
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "autoUpdate": {
+                  "type": "boolean"
+                },
+                "followActive": {
+                  "type": "boolean"
+                },
+                "pinnedRevision": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "installedVersion": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 256
+                },
+                "installedRevision": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[a-f0-9]{40}$"
+                },
+                "error": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "maxLength": 1024
+                }
+              },
+              "required": [
+                "autoUpdate",
+                "followActive",
+                "pinnedRevision",
+                "installedVersion",
+                "installedRevision",
+                "error"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "provider",
+          "canonicalUrl",
+          "requestedRef",
+          "pinnedRevision",
+          "resolvedRevision",
+          "selectedPackIds",
+          "autoUpdate",
+          "lastCheck",
+          "lastResult",
+          "installedVersion",
+          "installedRevision",
+          "provenance",
+          "error"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "sources"
+  ],
+  "additionalProperties": false
+}

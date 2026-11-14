@@ -1,0 +1,565 @@
+{
+  "installedFiles": [
+    {
+      "path": "/home/Mw/.config/quickshell/README.md",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/README.md",
+      "beforeSha256": "b9445f520a7e32bb45f77d47abc4660e83dc5c6b1e5474ff4bab17252dd92377",
+      "afterSha256": "3dbc28642ab88a97b59b33e37585ece85ed26f48045d29979703c5b121d6429c"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/ControlTile.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/ControlTile.qml",
+      "beforeSha256": "86e4a7b96b8afeb9c5180fc38fad6ac795578d6c6189b9c356f3f36a60ed4e98",
+      "afterSha256": "0d653f883e7e5a8fec80cd87ef9be8d20108bd64e1bd9d4811e029820e90e21d"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/Glyph.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/Glyph.qml",
+      "beforeSha256": "a01a39d211cccb583ec31ead138d993971de67d74c94feec2c35cbd8790b8de5",
+      "afterSha256": "bb3176bdb2fecb62483d573f578df811dbe2d79efebbe9f3fba3609d5f696c62"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/Pill.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/Pill.qml",
+      "beforeSha256": "2d8c74ad6c97dc2839be271119af06a05b3b3584db6fcb47c20e628de9456f95",
+      "afterSha256": "573d35c92e464aa28cb6217b0b75e26bce443ecabf32a600f11db9366cf4d67c"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/QuickWheel.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/QuickWheel.qml",
+      "beforeSha256": "c7465e09c61e772d97ada050ee62690974b0bf6a9f066a1d33c58b861edb719f",
+      "afterSha256": "6fbb9c4c09c10baaed8356d296f126e640b475ce80dcfb5291e39e580e752b75"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/ScrollingStack.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/ScrollingStack.qml",
+      "beforeSha256": "36dac3fdbfc6669e2f5f6e9a95225988d8bdfd3c1452e7b5c9896280ff89dcf1",
+      "afterSha256": "dd3d3b82953f12d5c09c972af7b8d14cb8502d47f8707bb5185d4de639598657"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/SettingsButton.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/SettingsButton.qml",
+      "beforeSha256": "72af21a8698644e55af69c191d37212cc4f2340b0bf610a2adcea08e7839a53d",
+      "afterSha256": "ab949de1c499059b576491ab83b276e694804e3528c007ab6aa820a7fbb53206"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/SettingsChoice.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/SettingsChoice.qml",
+      "beforeSha256": "1d68e69997d9c0e2224c655293f9c9198723081f48a52861249411bcc36b2438",
+      "afterSha256": "4e82da774b70cca0e2a5881184390b5d057f585360d5cb176d0972e430dbae6c"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/SettingsSwitch.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/SettingsSwitch.qml",
+      "beforeSha256": "dbc5a77ff6f0c9811d0d5a3239399eeaa3025bc15e5ce62447aa711922d6e29b",
+      "afterSha256": "59e2f4c1a29d82dc4f2b2af5ef465342fb238d315b042725a99aaae581a253c9"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/SettingsThemeCard.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/SettingsThemeCard.qml",
+      "beforeSha256": "16d4e02486b8f241247444df1675f0b4cf6754b9c6f6cdea541d5964875a7370",
+      "afterSha256": "bce4db36ee967c8f781f5f2a1a7f4f33f9d34602e578377edf7e23e6e2aab439"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/SettingsWindow.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/SettingsWindow.qml",
+      "beforeSha256": "d31bc3157b43dd61fda68f80eb54d060f522ab98ed922d22c5df33951759f4ec",
+      "afterSha256": "fb6ac30a2a7b021c5927fa815f0704b250fc2452b68f31750b8e1ca4074dd129"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/ThemeLogo.qml",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "3efc29fd2f9e81af137e11d4d33752c4df62a04dc544c58b0a8d54d9f5a3fc4a"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/ThemedScrollBar.qml",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "1a2cd0f22c798fc9b2f9071717d5e7e5fef35103d0ee79e0f0f85b0884e45bcf"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/ThemedToolTip.qml",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "36cc17758ffe44424f3f2d28ed7443fc1561166d0677aef5563bdbfe9c894ae5"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/components/Wallpaper.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/components/Wallpaper.qml",
+      "beforeSha256": "2cd966199ecdeee04473121aad2653c0fa8847d449f46594e3bd692534613368",
+      "afterSha256": "0a6e8d6f2415a58faac6ba5519b237031b6cef571d6f6ed2c9acb22a413b3247"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/core/Fallback.js",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "6e653324939478b8584e12c4be7b5e3afb62e67cae89915aaf17ee34c883571a"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/core/Theme.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/core/Theme.qml",
+      "beforeSha256": "080a3541629a54e87df630a355aff1bcff79c0ab340b432e23759d3a60a0b3af",
+      "afterSha256": "3e690d0c3057b5a8e8a221d04ecb0d83f73343e1a4cbb49d18781cf4c60ef42c"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/ConnectivityView.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/ConnectivityView.qml",
+      "beforeSha256": "9b5ecb2bbe693a901e7f957670ddef0d98640c31d0c6499856e1671e2150da6c",
+      "afterSha256": "1bdc55bbb2d85875749f19c448fd83003d91c4d1466ca9ac86793c513ef828db"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/InputPicker.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/InputPicker.qml",
+      "beforeSha256": "f3166190174a9ad9dcfaf0bb70d8c4e863d279e264da9b1c7d8ea7f8499921d2",
+      "afterSha256": "c08291f54bac227ffb8dfdfcf39ce38b825a010c7c7cac081da5bcc9fb32706b"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/LauncherView.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/LauncherView.qml",
+      "beforeSha256": "3b11e4f755781560e830d252d09cc74621842eac543b3a2697f7ee4df1c3a7eb",
+      "afterSha256": "22b49e40bf5536b039cfce3e95bb073eefb2cb0247a33ca5c1602568a555dcc8"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/NotificationCenter.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/NotificationCenter.qml",
+      "beforeSha256": "0314b4c1bdebf4436fb84696f60443d70a0a2c17226b7e1eae4f496bb928997e",
+      "afterSha256": "f30abc94545a295733fbf56960a203671043d0fc66f20c742dd6507677220390"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/QuickSettings.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/QuickSettings.qml",
+      "beforeSha256": "cd9215c2cbf33cb538e09d838acd1fb387418c43d896197051717d164b7d4ec4",
+      "afterSha256": "2304c4eefcb1440b6857bde750ba9637347f73427588d3244b7a6d59298c1f0e"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/SettingsConnectivity.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/SettingsConnectivity.qml",
+      "beforeSha256": "6c9efe824cbaecd88e7d2a08fdc770978a5fb5a6acacd4ce740499decb27861a",
+      "afterSha256": "5bb80f4b7c9b9ba40379424d8b19e55800fb589793404fd722eeac308a5a2c9d"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/SettingsView.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/SettingsView.qml",
+      "beforeSha256": "16e10244de146733222ada45d752a958f723c77b9a96e9d3072e41867dc5f756",
+      "afterSha256": "0ef81aede2118c58136335e37e65a58223314dc36e88102b1ee8becda929f0d7"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/requirements-theme.lock",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "e24e0300e35f4bb9a0728c8fe63b2da3e8c1ef1487a41aa269754d645f885e14"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/requirements-theme.txt",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "2344b57cba617be34a4800b8bdee91b4fa7d4791c8d2c5ea53b6f9e127483861"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/catalog.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "9b18d224e78431dd0af09aaddec466d3a101c862fb5a0c5e809a9d63477ab82e"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/material-export.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "26192c4e52d3976886883885effd883308fff2254075b56b85eae5f3796f90b3"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/overrides.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "000a764451d818804515923995ff546c48a3c934d29bc1fdb2742c4f1158a777"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/pack.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "4ed0aaf4fc18c500871695dbb52290ddd484bfd6053a68aedeea770cdd6f32c4"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/palette.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "6cf0765657dd0f6ba662adadbfc629648ea6dcbc1a816dde4edbd9e2c63c545e"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/selection.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "8a748ad51fff9cf8b3aac6e4eb14a90284d4a9b9e667af5630a1d35cfe6dc469"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/snapshot.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "6f71b44030b0e1093f40868f922f3e89788e2a034f5b022019fa65ec95c81ea2"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/schemas/sources.schema.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "82c4db5c4946bcd084fc87898cc5b379a2220268fe6573e83498edf25a1306c9"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/preferences.py",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/services/preferences.py",
+      "beforeSha256": "21d2212a02887f8c4ce08cc3587596abe28a2af734d6b08c2c6c4f4ecec421ba",
+      "afterSha256": "570ba93f567883dc1e6973e1ec0da3158fa0c6b835faa50fa64ba1f9c2fbfc9f"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/themes.py",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/services/themes.py",
+      "beforeSha256": "2c6268abedee3dddb5532f78d3b086d86eeb528d4406de1d102a46581b51d5a5",
+      "afterSha256": "a994958aa8dabf5210f92360d4c2e21404b3e2feec227b58c46a0550cc785a25"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/__init__.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "74ab5b1fc5ee551c4cdb76d331e133fd1adbb64a99361244f09b313dc98bf23a"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/activation.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "2f887edab8295f9175ded9dd92fae86dc173ba84842ebd4ed45c2856de6b80ad"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/catalog.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "ec1edbb1ae9d86a541afc49e6e5a3a24dc29d1e53776e6b732ff78e2f4c62124"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/color.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "063ada52f16be84bee64ddb4b353b5158590f80bb28bc8ff729a44fb81461498"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/migration.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "60596d2c39f839b251d5fdc0eefb0cc7631aedd8343a2351fd25a7938f348f61"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/paths.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "f074722bbceae15284487b634d95cfd88a667964fb72b0f0f0614416469d9818"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/providers.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "1c008c8338d602784f4b816f11a025f7f781d7154b9fb02dcb1fe0b0b53c106e"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/storage.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "87b3add080595b54414ac0a4e2e547f81804be686a2d8d55ed9336abe97b454b"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/validation.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "e0c7e84b10ac0291ac70a3edd448741bafae7a28dee66cf7535f912311b399ef"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/watch.py",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "be8bc852c5b0018a2eba5d3cfe2f0dc30b84a88bc1ea9a1f9393c8289c185ca8"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/themes/eclipse/colors.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "7d6be3a05249d29df4cf5215f33c49cfa717418c1cb8d02e80f78f009ad60d2d"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/themes/eclipse/theme.json",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/themes/eclipse/theme.json",
+      "beforeSha256": "55b8642856d0afd3f757094d76144e9aecb589d49d6141132ae7160435c77927",
+      "afterSha256": "512507176ac772373db1e6d83f160f272a67bb474d55e316f445969d205737ed"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/themes/wizarch/colors.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "4f006f254775b724cdfde9bd3ac1ca69d3292da40db13d2ff4356b891b3f8043"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/themes/wizarch/theme.json",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/themes/wizarch/theme.json",
+      "beforeSha256": "5d52f99c57fc825f00cf4d6627e3eb3fa67d3809f999fd50e48b40fdc1ab05d6",
+      "afterSha256": "528d798eb895cc9ac3c6f5280c1bd8bec6ffc1d2c565f92415df0b80bd5b7118"
+    },
+    {
+      "path": "/home/Mw/.config/hypr/hyprland.lua",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/hypr/hyprland.lua",
+      "beforeSha256": "769d0e218cd96d3e2e2102133bee564ac408800272a623bd728f4e03833bb9c3",
+      "afterSha256": "7392f96e5fc36616e5f006492989b11a0bc97d292a739e34108aca61821afa6c"
+    },
+    {
+      "path": "/home/Mw/.config/hypr/wizarch-theme.lua",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/hypr/wizarch-theme.lua",
+      "beforeSha256": "eb72fc2dc1ca5e2bf5fe5063c205a5b1bb95d5fb832c15defef8ab5cf2748a21",
+      "afterSha256": "695fe467fb2a1f37bdeeda79d52a5c98b486136b95083b08fadd6ad740276fb9",
+      "reviewDeploymentAfterSha256": "761537eccf6cd1f9cba0c0ab6e5d1d6d2078423def419467774ee50f17e41713"
+    },
+    {
+      "path": "/home/Mw/.config/hypr/wizarch-theme-geometry.lua",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "0340dcebba1120a7cc85db8671e55b1cd3400a08cb7b68ee0d548820edfc4819"
+    },
+    {
+      "path": "/home/Mw/.config/wizarch/theme-selection.json",
+      "existed": false,
+      "backup": null,
+      "beforeSha256": null,
+      "afterSha256": "25fd58aedefbcc738e96eb7ad697f8f63aa29d326f7eac5df24a3ae5256f58f1",
+      "reviewDeploymentAfterSha256": "14d65145def03b7443e29ae76b34a8f3a3c3906d6337775da714cedf28c802de"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/ThemePicker.qml",
+      "existed": true,
+      "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup/.config/quickshell/panels/ThemePicker.qml",
+      "beforeSha256": "faa268ca0782a4afe6c6bf56d2cad86383270722a8698efcd445a709f890ac2e",
+      "afterSha256": "02760cd302d7e34b8306873416df9c39fa7a9b8c4aa413eedb71123cb1875f73"
+    }
+  ],
+  "newStateDirectory": "/home/Mw/.local/state/wizarch/theme",
+  "dependencyRuntime": "/home/Mw/.local/share/wizarch/theme-runtime",
+  "preferencesUnchanged": true,
+  "rounding": 12,
+  "border": 2,
+  "compositorErrors": "\n\n",
+  "selection": {
+    "identity": "bundled:wizarch",
+    "mode": "dark",
+    "revision": "ab64ddc83832727ee9bf95fd89115f93f2844e874a6de8dd5d179e7fa7f75d0c",
+    "schemaVersion": 1,
+    "wallpaperId": "nocturne"
+  },
+  "backup": "/home/Mw/Documents/Codex/Wizarch/work/material-deployment-backup",
+  "bootstrapResult": {
+    "ok": true,
+    "revision": "66646fb2f3c46b88f7b4860d65d7df2eb0c3bfa6a37cbca75953385d6b1a306a",
+    "theme": "bundled:eclipse"
+  },
+  "themeImportsUseXdgConfigHome": true,
+  "liveRender": {
+    "path": "/home/Mw/Documents/Codex/Wizarch/outputs/material-theme/live-installed-eclipse-dark-calendar-crop.png",
+    "crop": "inside calendar body; no user application content",
+    "rolePixelCounts": {
+      "surface": 35640,
+      "onSurface": 36,
+      "onSurfaceVariant": 4
+    },
+    "pixelTolerance": 8,
+    "revision": "66646fb2f3c46b88f7b4860d65d7df2eb0c3bfa6a37cbca75953385d6b1a306a"
+  },
+  "preservedInstalledFiles": [
+    "core/SystemServices.qml",
+    "core/Workspaces.qml",
+    "shell.qml",
+    "services/workspaces.py",
+    "state/active.json",
+    "themes/eclipse/assets/wallpaper.jpg"
+  ],
+  "stateLabelPreserved": true,
+  "deploymentReloadLog": [
+    "2026-10-09 03:17:52.155  INFO: Reloading configuration...",
+    "2026-10-09 03:17:52.224 ERROR: Failed to load configuration",
+    "2026-10-09 03:17:52.224 ERROR:   caused by @shell.qml[10:40]: Type Pill unavailable",
+    "2026-10-09 03:17:52.224 ERROR:   caused by @components/Pill.qml[280:17]: ThemedToolTip is not a type",
+    "2026-10-09 03:17:52.262  INFO: Reloading configuration...",
+    "2026-10-09 03:17:52.537  INFO: Configuration Loaded",
+    "2026-10-09 03:17:52.554  WARN scene: QML FileView at @core/Theme.qml[58:2]: Read of /home/Mw/.local/state/wizarch/theme/active.json failed: File does not exist.",
+    "2026-10-09 04:08:12.956  INFO: Reloading configuration...",
+    "2026-10-09 04:08:13.202  INFO: Configuration Loaded"
+  ],
+  "steadyStateQmlErrors": [],
+  "monitors": [
+    {
+      "name": "eDP-1",
+      "width": 1920,
+      "height": 1080,
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "reserved": [
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "name": "HDMI-A-1",
+      "width": 1920,
+      "height": 1080,
+      "x": 1920,
+      "y": 0,
+      "scale": 1,
+      "reserved": [
+        10,
+        10,
+        10,
+        10
+      ]
+    }
+  ],
+  "installedReadmeLinks": "Resolve to source documentation rather than nonexistent installed ../docs",
+  "finalFollowup": {
+    "files": [
+      "services/themes.py",
+      "services/theming/catalog.py",
+      "services/theming/color.py",
+      "services/theming/storage.py",
+      "components/SettingsThemeCard.qml",
+      "panels/SettingsView.qml",
+      "panels/ThemePicker.qml"
+    ],
+    "reason": "single-mode seed support, finite JSON/cache bounds, inert metadata, namespaced legacy picker",
+    "sourceReloadOnly": true,
+    "processRestarted": false
+  },
+  "initialDeploymentSelection": {
+    "identity": "bundled:eclipse",
+    "mode": "dark",
+    "revision": "66646fb2f3c46b88f7b4860d65d7df2eb0c3bfa6a37cbca75953385d6b1a306a",
+    "schemaVersion": 1,
+    "wallpaperId": "original"
+  },
+  "reviewFollowupEvidence": "review-deployment.json",
+  "currentHashesUpdatedAfterReview": [
+    {
+      "path": "/home/Mw/.config/quickshell/core/Theme.qml",
+      "previousRecordedAfterSha256": "a60ffb50c2cebe758947ad2983cff6ecf3acbfbd15a0d8013d29fd88445a58c4",
+      "currentSha256": "3e690d0c3057b5a8e8a221d04ecb0d83f73343e1a4cbb49d18781cf4c60ef42c",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/panels/SettingsView.qml",
+      "previousRecordedAfterSha256": "089e21157cf309b251e930e8de6267f16ba95fc4d59a6b09691339ec2f2f156f",
+      "currentSha256": "0ef81aede2118c58136335e37e65a58223314dc36e88102b1ee8becda929f0d7",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/themes.py",
+      "previousRecordedAfterSha256": "6ef8b27d58ef7cabda556fb2a154c6a1760677544d02cdbad0e82024480547ea",
+      "currentSha256": "a994958aa8dabf5210f92360d4c2e21404b3e2feec227b58c46a0550cc785a25",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/catalog.py",
+      "previousRecordedAfterSha256": "76f320e676059910af863cd6f470d5ac45add28fb068440bacf5800fa5b7c664",
+      "currentSha256": "ec1edbb1ae9d86a541afc49e6e5a3a24dc29d1e53776e6b732ff78e2f4c62124",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/color.py",
+      "previousRecordedAfterSha256": "2ed3b927bfe52a10d52ae353fb061a45c706d64ca7978adab9fec3ed72125a3c",
+      "currentSha256": "063ada52f16be84bee64ddb4b353b5158590f80bb28bc8ff729a44fb81461498",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/providers.py",
+      "previousRecordedAfterSha256": "c71b7f3b9176a53911da8d77d20a47a92558a56593fbf4571c7dd826900f2936",
+      "currentSha256": "1c008c8338d602784f4b816f11a025f7f781d7154b9fb02dcb1fe0b0b53c106e",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/storage.py",
+      "previousRecordedAfterSha256": "cf63dd1f4ecbec68db692b5b96ecd2141a9cea5a036260b54514ca588a2264d7",
+      "currentSha256": "87b3add080595b54414ac0a4e2e547f81804be686a2d8d55ed9336abe97b454b",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/quickshell/services/theming/watch.py",
+      "previousRecordedAfterSha256": "45d5895beec7bcfc6cf27899fcd1b6cd5f7d2f3dc00ea2c718327a10e6df3e98",
+      "currentSha256": "be8bc852c5b0018a2eba5d3cfe2f0dc30b84a88bc1ea9a1f9393c8289c185ca8",
+      "origin": "verified review fix"
+    },
+    {
+      "path": "/home/Mw/.config/hypr/wizarch-theme.lua",
+      "previousRecordedAfterSha256": "a0579ccb6401b3a5c6842e226cd41de6e61f53add77b2100bff21bd747dbe158",
+      "currentSha256": "761537eccf6cd1f9cba0c0ab6e5d1d6d2078423def419467774ee50f17e41713",
+      "origin": "independent user theme-selection change"
+    },
+    {
+      "path": "/home/Mw/.config/wizarch/theme-selection.json",
+      "previousRecordedAfterSha256": "ec783f3e2cd7b9c940130d291f325362b1c2f3ef35f4da29cdec36807a7cade6",
+      "currentSha256": "14d65145def03b7443e29ae76b34a8f3a3c3906d6337775da714cedf28c802de",
+      "origin": "independent user theme-selection change"
+    }
+  ],
+  "laterObservedSelection": {
+    "identity": "bundled:eclipse",
+    "mode": "light",
+    "revision": "90c86ca3ddfcd05908253c3494e5b741b628cb1947dcb2dfd733d0eae555d071",
+    "schemaVersion": 1,
+    "wallpaperId": "original"
+  }
+}

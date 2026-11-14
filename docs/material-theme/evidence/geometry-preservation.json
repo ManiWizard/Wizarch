@@ -1,0 +1,18 @@
+{
+  "components/Pill.qml": {
+    "timingGeometryStatementsIdentical": true
+  },
+  "panels/CalendarView.qml": {
+    "timingGeometryStatementsIdentical": true
+  },
+  "components/QuickWheel.qml": {
+    "timingGeometryStatementsIdentical": true,
+    "exception": "Added tonal backing rectangles behind outside-wheel text; fill existing text bounds and do not affect geometry."
+  },
+  "components/ScreenBorder.qml": {
+    "timingGeometryStatementsIdentical": true
+  },
+  "components/ScrollingFrameGuard.qml": {
+    "timingGeometryStatementsIdentical": true
+  }
+}

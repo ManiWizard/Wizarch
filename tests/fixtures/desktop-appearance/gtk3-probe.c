@@ -1,0 +1,4 @@
+#include <gtk/gtk.h>
+#include <stdio.h>
+static void report(GObject *s,GParamSpec*p,gpointer data){char*t=NULL;gboolean d=FALSE;g_object_get(s,"gtk-theme-name",&t,"gtk-application-prefer-dark-theme",&d,NULL);printf("theme=%s prefer-dark=%d\n",t,d);fflush(stdout);g_free(t);}
+int main(int argc,char**argv){gtk_init(&argc,&argv);GtkWidget*w=gtk_window_new(GTK_WINDOW_TOPLEVEL);gtk_window_set_title(GTK_WINDOW(w),"Wizard desktop mode verification — GTK3");GtkWidget*b=gtk_button_new_with_label("GTK3 system theme button");gtk_container_add(GTK_CONTAINER(w),b);gtk_window_set_default_size(GTK_WINDOW(w),350,150);g_signal_connect(w,"destroy",G_CALLBACK(gtk_main_quit),NULL);GtkSettings*s=gtk_settings_get_default();g_signal_connect(s,"notify::gtk-theme-name",G_CALLBACK(report),NULL);report(G_OBJECT(s),NULL,NULL);gtk_widget_show_all(w);gtk_main();}

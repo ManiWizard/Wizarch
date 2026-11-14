@@ -1,0 +1,6 @@
+  INFO: Launching config: "/tmp/wizarch-wheel-aa0p8m3_/shell.qml"
+  INFO: Shell ID: "d6e70936c0d56abad8932b9d63a3725c" Path ID "d6e70936c0d56abad8932b9d63a3725c"
+  INFO: Saving logs to "/run/user/1000/wm3/quickshell/by-id/3q090qcmmt/log.qslog"
+  INFO: Configuration Loaded
+ DEBUG qml: WHEEL_PASS: keyboard navigation, confirmation, mouse sectors, dead zone, previous target, invalid monitor and cancellation
+

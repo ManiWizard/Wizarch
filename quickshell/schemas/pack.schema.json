@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "integer"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1024
+    },
+    "modes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "light",
+          "dark"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 2,
+      "uniqueItems": true
+    },
+    "defaultMode": {
+      "enum": [
+        "light",
+        "dark"
+      ]
+    },
+    "color": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "keys"
+            },
+            "keys": {
+              "type": "object",
+              "properties": {
+                "primary": {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                "secondary": {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                },
+                "tertiary": {
+                  "type": "string",
+                  "pattern": "^#[0-9a-fA-F]{6}$"
+                }
+              },
+              "required": [
+                "primary"
+              ],
+              "additionalProperties": false
+            },
+            "variant": {
+              "enum": [
+                "tonal-spot-three-key"
+              ]
+            },
+            "contrast": {
+              "type": "number",
+              "enum": [
+                0,
+                0.5,
+                1
+              ]
+            }
+          },
+          "required": [
+            "type",
+            "keys"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "roles"
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256
+            }
+          },
+          "required": [
+            "type",
+            "path"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "wallpapers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 32,
+      "uniqueItems": true
+    },
+    "defaultWallpaper": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "attribution": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "preview": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "logo": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9-]+\\.[a-z0-9.-]+$"
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "version",
+    "modes",
+    "defaultMode",
+    "color",
+    "wallpapers",
+    "defaultWallpaper"
+  ],
+  "additionalProperties": false
+}

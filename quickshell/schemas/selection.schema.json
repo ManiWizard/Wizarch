@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1,
+      "type": "integer"
+    },
+    "identity": {
+      "type": "string",
+      "pattern": "^(bundled|local-[a-f0-9]{16}|github-[a-f0-9]{16}):[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "mode": {
+      "enum": [
+        "light",
+        "dark"
+      ]
+    },
+    "wallpaperId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "overrides": {
+      "type": "object",
+      "properties": {
+        "wallpaperId": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]{0,63}$"
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "identity",
+    "mode",
+    "wallpaperId",
+    "revision"
+  ],
+  "additionalProperties": false
+}

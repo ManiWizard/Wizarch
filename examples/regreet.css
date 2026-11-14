@@ -1,0 +1,26 @@
+window {
+    background: transparent;
+    color: #e6e0e9;
+    font-family: "Noto Sans", sans-serif;
+}
+
+box.login-box, .login-box {
+    background: rgba(25, 23, 32, 0.88);
+    border: 1px solid rgba(230, 224, 233, 0.20);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.34);
+}
+
+entry, combobox, button {
+    background: rgba(59, 56, 62, 0.94);
+    color: #e6e0e9;
+    border: 1px solid rgba(230, 224, 233, 0.18);
+    border-radius: 10px;
+    min-height: 34px;
+}
+
+button:hover, entry:focus {
+    background: #49454e;
+    border-color: #d0bcfe;
+}

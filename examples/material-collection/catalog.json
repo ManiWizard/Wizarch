@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "example",
+  "name": "Example collection",
+  "packs": [
+    {
+      "id": "aurora",
+      "path": "themes/aurora/theme.json"
+    }
+  ]
+}

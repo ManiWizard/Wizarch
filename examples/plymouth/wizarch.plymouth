@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Wizarch
+Description=Wizarch boot splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/wizarch
+ScriptFile=/usr/share/plymouth/themes/wizarch/wizarch.script

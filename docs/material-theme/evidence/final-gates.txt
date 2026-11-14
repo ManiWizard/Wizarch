@@ -1,0 +1,11 @@
+2026-10-09 UTC — review follow-up
+PASS: 27 original pipeline tests + 13 review regressions (40 total); watcher pipe closed.
+PASS: 133 main + 36 control + 3 override + 1 second-monitor isolated renders; historical and fresh live crops separately indexed.
+PASS: main/control snapshot hash matches reconstructed production source; override original observed checkout hash retained with separate verified production hash.
+PASS: all eight fix files match current source, installation and rendered copy; original backups match before-hashes.
+PASS: deployment preserved Wizarch dark/Nocturne active/selection/compositor bytes; later independent Eclipse light selection left untouched.
+PASS: preserved preferences, Quick Settings expression and unrelated hashes still match.
+PASS: no journal or compositor errors; live steady-state QML errors empty at post-deployment render check.
+PASS: documentation links resolve; LocalProvider entry link corrected; git diff --check.
+PASS: only owned Material compositor/private bus stopped; independent sessions preserved.
+UNVERIFIED: concurrent launcher edits not included in these renders; physical power loss/hardware/long soak and all remote execution.

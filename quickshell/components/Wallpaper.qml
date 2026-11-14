@@ -9,6 +9,6 @@ PanelWindow {
  exclusionMode: ExclusionMode.Ignore
  WlrLayershell.layer: WlrLayer.Background
  WlrLayershell.namespace: "wizarch-wallpaper"
- color: "#000000"
- Image { anchors.fill: parent; source: Core.Theme.wallpaper; fillMode: Image.PreserveAspectCrop; asynchronous: true }
+ color: Core.Theme.surface
+ Image { anchors.fill: parent; source: Core.Theme.wallpaper; fillMode: Image.PreserveAspectCrop; asynchronous: true; cache: false; sourceSize: Qt.size(Math.ceil(width),Math.ceil(height)) }
 }

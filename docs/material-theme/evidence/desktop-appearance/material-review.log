@@ -1,0 +1,18 @@
+test_explicit_runtime_wins_before_imports_and_partial_caller (__main__.Review.test_explicit_runtime_wins_before_imports_and_partial_caller) ... ok
+test_generation_with_simulated_partial_caller_and_complete_runtime (__main__.Review.test_generation_with_simulated_partial_caller_and_complete_runtime) ... ok
+test_pack_cache_corruption_still_recovers (__main__.Review.test_pack_cache_corruption_still_recovers) ... ok
+test_preview_override_palette_matches_activation_and_refresh (__main__.Review.test_preview_override_palette_matches_activation_and_refresh) ... ok
+test_r1_127_pack_first_import_rejected_without_registration (__main__.Review.test_r1_127_pack_first_import_rejected_without_registration) ... ok
+test_r1_exact_boundary_replacement_and_overflow (__main__.Review.test_r1_exact_boundary_replacement_and_overflow) ... ok
+test_r1_source_bounds_and_corrupt_source_isolation (__main__.Review.test_r1_source_bounds_and_corrupt_source_isolation) ... ok
+test_r2_bounded_read_and_growth_after_open (__main__.Review.test_r2_bounded_read_and_growth_after_open) ... ok
+test_r2_special_files_and_strict_parser (__main__.Review.test_r2_special_files_and_strict_parser) ... ok
+test_r3_corrupt_generated_cache_variants_rebuilt (__main__.Review.test_r3_corrupt_generated_cache_variants_rebuilt) ... ok
+test_r3_unavailable_generation_preserves_commit_exports_not_disposable (__main__.Review.test_r3_unavailable_generation_preserves_commit_exports_not_disposable) ... ok
+test_r4_compiled_collection_bound_and_directory_durability (__main__.Review.test_r4_compiled_collection_bound_and_directory_durability) ... ok
+test_r4_final_compiled_quota_seed_export_and_idempotence (__main__.Review.test_r4_final_compiled_quota_seed_export_and_idempotence) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 10.345s
+
+OK

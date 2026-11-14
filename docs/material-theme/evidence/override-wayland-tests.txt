@@ -1,0 +1,1 @@
+PASS: 3 actual override renders; inactive preview/card/apply agree; active override edits preview without publishing; Cancel preserves desktop

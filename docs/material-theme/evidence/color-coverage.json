@@ -1,0 +1,13 @@
+{
+  "canonicalRoles": 46,
+  "apiCoverage": "pass",
+  "residualColors": [
+    {
+      "file": "components/OverlayShadow.qml",
+      "line": 27,
+      "code": "shadowColor: separation.darkSurface ? \"#ffffff\" : \"#000000\"",
+      "reason": "Intentional inverse contrast halo: preserves existing dark/light opacity, blur and shape. This is a shell effect, not compositor shadow enablement."
+    }
+  ],
+  "thirdPartyArtwork": "Wallpapers, logos, desktop/tray app icons and media art keep original pixels; control SVGs use Glyph.ink."
+}

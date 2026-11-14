@@ -1,0 +1,4276 @@
+Monitoring bus message stream.
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:43.210304 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.209
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:43.210510 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209
+  MESSAGE "s" {
+          STRING ":1.209";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.210520 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.209";
+          STRING "";
+          STRING ":1.209";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.210528 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.209";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:43.210535 UTC"
+  Sender=:1.209  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.DBus.Properties  Member=Get
+  UniqueName=:1.209
+  MESSAGE "ss" {
+          STRING "org.freedesktop.portal.Screenshot";
+          STRING "version";
+  };
+
+‣ Type=method_call  Endian=l  Flags=1  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:43.210542 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0='org.freedesktop.portal.Desktop',arg1=''";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=528  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:43.210548 UTC"
+  Sender=:1.7  Destination=:1.209
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:43.212117 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:43.212145 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "s" {
+          STRING ":1.210";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.212153 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.210";
+          STRING "";
+          STRING ":1.210";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.212160 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.210";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:43.212273 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:43.212280 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:43.212287 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/peripherals/mouse/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:43.212302 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=4  Timestamp="Fri 2026-10-09 06:57:43.212307 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/sound/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=4  Timestamp="Fri 2026-10-09 06:57:43.212312 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=5  Timestamp="Fri 2026-10-09 06:57:43.212317 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/privacy/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=5  Timestamp="Fri 2026-10-09 06:57:43.212322 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=6  Timestamp="Fri 2026-10-09 06:57:43.212327 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/wm/preferences/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=6  Timestamp="Fri 2026-10-09 06:57:43.212332 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=7  Timestamp="Fri 2026-10-09 06:57:43.212338 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/a11y/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=7  Timestamp="Fri 2026-10-09 06:57:43.212344 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=8  Timestamp="Fri 2026-10-09 06:57:43.212348 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/a11y/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=8  Timestamp="Fri 2026-10-09 06:57:43.212354 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=1  Version=1 Cookie=4  Timestamp="Fri 2026-10-09 06:57:43.219456 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "type='signal',path='/org/freedesktop/portal/desktop',interface='org.freedesktop.portal.Settings',member='SettingChanged'";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=5  Timestamp="Fri 2026-10-09 06:57:43.219505 UTC"
+  Sender=:1.209  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=ReadAll
+  UniqueName=:1.209
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.appearance";
+                  STRING "org.gnome.desktop.a11y.interface";
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=529  Timestamp="Fri 2026-10-09 06:57:43.219723 UTC"
+  Sender=:1.7  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetConnectionCredentials
+  UniqueName=:1.7
+  MESSAGE "s" {
+          STRING ":1.209";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=529  Timestamp="Fri 2026-10-09 06:57:43.219733 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "UnixUserID";
+                          VARIANT "u" {
+                                  UINT32 1000;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessID";
+                          VARIANT "u" {
+                                  UINT32 43627;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "UnixGroupIDs";
+                          VARIANT "au" {
+                                  ARRAY "u" {
+                                          UINT32 998;
+                                          UINT32 1000;
+                                          UINT32 1000;
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessFD";
+                          VARIANT "h" {
+                                  UNIX_FD 5;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=530  Timestamp="Fri 2026-10-09 06:57:43.219954 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=ReadAll
+  UniqueName=:1.7
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.appearance";
+                  STRING "org.gnome.desktop.a11y.interface";
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=166  ReplyCookie=530  Timestamp="Fri 2026-10-09 06:57:43.220236 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "keyboard-focus-visible-timeout";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "reduced-motion";
+                                          VARIANT "s" {
+                                                  STRING "no-preference";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-status-shapes";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "high-contrast";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.appearance";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "contrast";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "u" {
+                                                  UINT32 2;
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=531  ReplyCookie=5  Timestamp="Fri 2026-10-09 06:57:43.220370 UTC"
+  Sender=:1.7  Destination=:1.209
+  UniqueName=:1.7
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.appearance";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "contrast";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "u" {
+                                                  UINT32 2;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "keyboard-focus-visible-timeout";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "reduced-motion";
+                                          VARIANT "s" {
+                                                  STRING "no-preference";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-status-shapes";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "high-contrast";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:43.220576 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:43.220587 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "s" {
+          STRING ":1.211";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.220593 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.211";
+          STRING "";
+          STRING ":1.211";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.220604 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.211";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:43.220709 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:43.220717 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:43.220723 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/peripherals/mouse/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:43.220729 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=4  Timestamp="Fri 2026-10-09 06:57:43.220741 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/sound/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=4  Timestamp="Fri 2026-10-09 06:57:43.220747 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=5  Timestamp="Fri 2026-10-09 06:57:43.220782 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/privacy/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=5  Timestamp="Fri 2026-10-09 06:57:43.220789 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=6  Timestamp="Fri 2026-10-09 06:57:43.220794 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/wm/preferences/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=6  Timestamp="Fri 2026-10-09 06:57:43.220800 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=7  Timestamp="Fri 2026-10-09 06:57:43.220806 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/a11y/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=7  Timestamp="Fri 2026-10-09 06:57:43.220813 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=8  Timestamp="Fri 2026-10-09 06:57:43.220821 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/a11y/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=8  Timestamp="Fri 2026-10-09 06:57:43.220828 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:43.221154 UTC"
+  Sender=:1.212  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.212
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:43.221164 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.212
+  MESSAGE "s" {
+          STRING ":1.212";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.221170 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.212";
+          STRING "";
+          STRING ":1.212";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.221177 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.212  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.212";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:43.221220 UTC"
+  Sender=:1.212  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=ListActivatableNames
+  UniqueName=:1.212
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:43.221225 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.212
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.DBus";
+                  STRING "ca.desrt.dconf";
+                  STRING "org.a11y.Bus";
+                  STRING "org.freedesktop.impl.portal.PermissionStore";
+                  STRING "org.freedesktop.impl.portal.desktop.gtk";
+                  STRING "org.freedesktop.impl.portal.desktop.hyprland";
+                  STRING "org.freedesktop.import1";
+                  STRING "org.freedesktop.machine1";
+                  STRING "org.freedesktop.portable1";
+                  STRING "org.freedesktop.portal.Desktop";
+                  STRING "org.freedesktop.portal.Documents";
+                  STRING "org.freedesktop.portal.Tracker";
+                  STRING "org.freedesktop.systemd1";
+                  STRING "org.gtk.GLib.PACRunner";
+                  STRING "org.telegram.desktop";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.221284 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.212  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.212";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.221291 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.212";
+          STRING ":1.212";
+          STRING "";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:43.221381 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:43.221386 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "s" {
+          STRING ":1.213";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.221395 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.213";
+          STRING "";
+          STRING ":1.213";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:43.221402 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.213";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:43.221463 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',path='/org/freedesktop/DBus',arg0='org.freedesktop.portal.Documents'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:43.221469 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:43.221472 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "org.freedesktop.portal.Documents";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:43.221477 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "s" {
+          STRING ":1.9";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=4  Timestamp="Fri 2026-10-09 06:57:43.221790 UTC"
+  Sender=:1.213  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.DBus.Properties  Member=Get
+  UniqueName=:1.213
+  MESSAGE "ss" {
+          STRING "org.freedesktop.portal.Settings";
+          STRING "version";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=532  ReplyCookie=4  Timestamp="Fri 2026-10-09 06:57:43.221873 UTC"
+  Sender=:1.7  Destination=:1.213
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=5  Timestamp="Fri 2026-10-09 06:57:43.221999 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',path='/org/freedesktop/DBus',arg0='org.freedesktop.portal.Desktop'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=5  Timestamp="Fri 2026-10-09 06:57:43.222006 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=6  Timestamp="Fri 2026-10-09 06:57:43.222009 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "org.freedesktop.portal.Desktop";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=6  Timestamp="Fri 2026-10-09 06:57:43.222012 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "s" {
+          STRING ":1.7";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=7  Timestamp="Fri 2026-10-09 06:57:43.222015 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.portal.Desktop',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged',path='/org/freedesktop/portal/desktop',arg0='org.freedesktop.portal.Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=7  Timestamp="Fri 2026-10-09 06:57:43.222022 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=8  Timestamp="Fri 2026-10-09 06:57:43.222026 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.portal.Desktop',interface='org.freedesktop.portal.Settings',path='/org/freedesktop/portal/desktop'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=8  Timestamp="Fri 2026-10-09 06:57:43.222030 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=9  Timestamp="Fri 2026-10-09 06:57:43.222033 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=StartServiceByName
+  UniqueName=:1.213
+  MESSAGE "su" {
+          STRING "org.freedesktop.portal.Desktop";
+          UINT32 0;
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=9  Timestamp="Fri 2026-10-09 06:57:43.222037 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "u" {
+          UINT32 2;
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=10  Timestamp="Fri 2026-10-09 06:57:43.222078 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "org.freedesktop.portal.Desktop";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=10  Timestamp="Fri 2026-10-09 06:57:43.222083 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "s" {
+          STRING ":1.7";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=11  Timestamp="Fri 2026-10-09 06:57:43.222123 UTC"
+  Sender=:1.213  Destination=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.DBus.Properties  Member=GetAll
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "org.freedesktop.portal.Settings";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=533  ReplyCookie=11  Timestamp="Fri 2026-10-09 06:57:43.222223 UTC"
+  Sender=:1.7  Destination=:1.213
+  UniqueName=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "version";
+                          VARIANT "u" {
+                                  UINT32 2;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=12  Timestamp="Fri 2026-10-09 06:57:43.222281 UTC"
+  Sender=:1.213  Destination=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=ReadAll
+  UniqueName=:1.213
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.gnome.*";
+                  STRING "org.freedesktop.appearance";
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=534  Timestamp="Fri 2026-10-09 06:57:43.222399 UTC"
+  Sender=:1.7  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetConnectionCredentials
+  UniqueName=:1.7
+  MESSAGE "s" {
+          STRING ":1.213";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=534  Timestamp="Fri 2026-10-09 06:57:43.222405 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "UnixUserID";
+                          VARIANT "u" {
+                                  UINT32 1000;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessID";
+                          VARIANT "u" {
+                                  UINT32 43626;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "UnixGroupIDs";
+                          VARIANT "au" {
+                                  ARRAY "u" {
+                                          UINT32 998;
+                                          UINT32 1000;
+                                          UINT32 1000;
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessFD";
+                          VARIANT "h" {
+                                  UNIX_FD 5;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=535  Timestamp="Fri 2026-10-09 06:57:43.222629 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=ReadAll
+  UniqueName=:1.7
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.gnome.*";
+                  STRING "org.freedesktop.appearance";
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=167  ReplyCookie=535  Timestamp="Fri 2026-10-09 06:57:43.223326 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.privacy";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-microphone";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-camera";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "old-files-age";
+                                          VARIANT "u" {
+                                                  UINT32 30;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remember-recent-files";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-sound-output";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "send-software-usage-stats";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "report-technical-problems";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remove-old-trash-files";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remove-old-temp-files";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "privacy-screen";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "usb-protection";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "usb-protection-level";
+                                          VARIANT "s" {
+                                                  STRING "lockscreen";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remember-app-usage";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-full-name-in-top-bar";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "hide-identity";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "recent-files-max-age";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "keyboard-focus-visible-timeout";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "reduced-motion";
+                                          VARIANT "s" {
+                                                  STRING "no-preference";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-status-shapes";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "high-contrast";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "always-show-universal-access-status";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "always-show-text-caret";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolkit-accessibility";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-color-palette";
+                                          VARIANT "s" {
+                                                  STRING "black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "can-change-accels";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "s" {
+                                                  STRING "prefer-light";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-blink";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-show-weekday";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "icon-theme";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-im-preedit-style";
+                                          VARIANT "s" {
+                                                  STRING "callback";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "menus-have-tearoff";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "scaling-factor";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-size";
+                                          VARIANT "i" {
+                                                  INT32 24;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-color-scheme";
+                                          VARIANT "s" {
+                                                  STRING "";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-im-module";
+                                          VARIANT "s" {
+                                                  STRING "";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-timeout-initial";
+                                          VARIANT "i" {
+                                                  INT32 200;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "accent-color";
+                                          VARIANT "s" {
+                                                  STRING "blue";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-theme";
+                                          VARIANT "s" {
+                                                  STRING "Wizard-Adwaita";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-show-seconds";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "locate-pointer";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-show-date";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-blink-time";
+                                          VARIANT "i" {
+                                                  INT32 1200;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-antialiasing";
+                                          VARIANT "s" {
+                                                  STRING "grayscale";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolbar-icons-size";
+                                          VARIANT "s" {
+                                                  STRING "large";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-timeout-repeat";
+                                          VARIANT "i" {
+                                                  INT32 20;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolbar-style";
+                                          VARIANT "s" {
+                                                  STRING "both-horiz";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "monospace-font-name";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Mono 11";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "enable-hot-corners";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "overlay-scrolling";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-blink-timeout";
+                                          VARIANT "i" {
+                                                  INT32 10;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-key-theme";
+                                          VARIANT "s" {
+                                                  STRING "Default";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolbar-detachable";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-rendering";
+                                          VARIANT "s" {
+                                                  STRING "automatic";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-theme";
+                                          VARIANT "s" {
+                                                  STRING "default";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "avatar-directories";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-im-status-style";
+                                          VARIANT "s" {
+                                                  STRING "callback";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "menubar-detachable";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "text-scaling-factor";
+                                          VARIANT "d" {
+                                                  DOUBLE 1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-battery-percentage";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-format";
+                                          VARIANT "s" {
+                                                  STRING "12h";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "menubar-accel";
+                                          VARIANT "s" {
+                                                  STRING "F10";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-enable-primary-paste";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-hinting";
+                                          VARIANT "s" {
+                                                  STRING "slight";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "document-font-name";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Sans 12";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-rgba-order";
+                                          VARIANT "s" {
+                                                  STRING "rgb";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "enable-animations";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-name";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Sans 11";
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.sound";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "theme-name";
+                                          VARIANT "s" {
+                                                  STRING "freedesktop";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "event-sounds";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "input-feedback-sounds";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "allow-volume-above-100-percent";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.peripherals.mouse";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "custom-accel-config";
+                                          VARIANT "a{sv}" {
+                                                  ARRAY "{sv}" {
+                                                          DICT_ENTRY "sv" {
+                                                                  STRING "pointer-step";
+                                                                  VARIANT "d" {
+                                                                          DOUBLE 1;
+                                                                  };
+                                                          };
+                                                          DICT_ENTRY "sv" {
+                                                                  STRING "pointer-speeds";
+                                                                  VARIANT "ad" {
+                                                                          ARRAY "d" {
+                                                                                  DOUBLE 0;
+                                                                                  DOUBLE 1;
+                                                                          };
+                                                                  };
+                                                          };
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "double-click";
+                                          VARIANT "i" {
+                                                  INT32 400;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "accel-profile";
+                                          VARIANT "s" {
+                                                  STRING "default";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "drag-threshold";
+                                          VARIANT "i" {
+                                                  INT32 8;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "scroll-wheel-emulation-button-lock";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "speed";
+                                          VARIANT "d" {
+                                                  DOUBLE 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "natural-scroll";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "middle-click-emulation";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "left-handed";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "scroll-wheel-emulation-button";
+                                          VARIANT "i" {
+                                                  INT32 0;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.input-sources";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "xkb-model";
+                                          VARIANT "s" {
+                                                  STRING "pc105+inet";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "mru-sources";
+                                          VARIANT "a(ss)" {
+                                                  ARRAY "(ss)" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-all-sources";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "current";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "xkb-options";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "sources";
+                                          VARIANT "a(ss)" {
+                                                  ARRAY "(ss)" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "per-window";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.calendar";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-weekdate";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "week-start-day";
+                                          VARIANT "s" {
+                                                  STRING "default";
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.wm.preferences";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "theme";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "focus-new-windows";
+                                          VARIANT "s" {
+                                                  STRING "smart";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "num-workspaces";
+                                          VARIANT "i" {
+                                                  INT32 4;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "raise-on-click";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-workarounds";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "titlebar-uses-system-font";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "titlebar-font";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Sans Bold 11";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "resize-with-right-button";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "action-right-click-titlebar";
+                                          VARIANT "s" {
+                                                  STRING "menu";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "action-middle-click-titlebar";
+                                          VARIANT "s" {
+                                                  STRING "none";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "mouse-button-modifier";
+                                          VARIANT "s" {
+                                                  STRING "<Super>";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "auto-raise";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "workspace-names";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "action-double-click-titlebar";
+                                          VARIANT "s" {
+                                                  STRING "toggle-maximize";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "visual-bell-type";
+                                          VARIANT "s" {
+                                                  STRING "fullscreen-flash";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "focus-mode";
+                                          VARIANT "s" {
+                                                  STRING "click";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "button-layout";
+                                          VARIANT "s" {
+                                                  STRING "appmenu:close";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "auto-raise-delay";
+                                          VARIANT "i" {
+                                                  INT32 500;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "audible-bell";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "visual-bell";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.fontconfig";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "serial";
+                                          VARIANT "i" {
+                                                  INT32 0;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.appearance";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "contrast";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "u" {
+                                                  UINT32 2;
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=536  ReplyCookie=12  Timestamp="Fri 2026-10-09 06:57:43.223821 UTC"
+  Sender=:1.7  Destination=:1.213
+  UniqueName=:1.7
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.fontconfig";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "serial";
+                                          VARIANT "i" {
+                                                  INT32 0;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.privacy";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-microphone";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-camera";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "old-files-age";
+                                          VARIANT "u" {
+                                                  UINT32 30;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remember-recent-files";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-sound-output";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "send-software-usage-stats";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "report-technical-problems";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remove-old-trash-files";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remove-old-temp-files";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "privacy-screen";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "usb-protection";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "usb-protection-level";
+                                          VARIANT "s" {
+                                                  STRING "lockscreen";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "remember-app-usage";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-full-name-in-top-bar";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "hide-identity";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "recent-files-max-age";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "keyboard-focus-visible-timeout";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "reduced-motion";
+                                          VARIANT "s" {
+                                                  STRING "no-preference";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-status-shapes";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "high-contrast";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "always-show-universal-access-status";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "always-show-text-caret";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolkit-accessibility";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-color-palette";
+                                          VARIANT "s" {
+                                                  STRING "black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "can-change-accels";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "document-font-name";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Sans 12";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "enable-animations";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-blink";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-show-weekday";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "icon-theme";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-im-preedit-style";
+                                          VARIANT "s" {
+                                                  STRING "callback";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "scaling-factor";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "menus-have-tearoff";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-size";
+                                          VARIANT "i" {
+                                                  INT32 24;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-show-seconds";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-im-module";
+                                          VARIANT "s" {
+                                                  STRING "";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-timeout-initial";
+                                          VARIANT "i" {
+                                                  INT32 200;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "accent-color";
+                                          VARIANT "s" {
+                                                  STRING "blue";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-theme";
+                                          VARIANT "s" {
+                                                  STRING "Wizard-Adwaita";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-color-scheme";
+                                          VARIANT "s" {
+                                                  STRING "";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-show-date";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-blink-time";
+                                          VARIANT "i" {
+                                                  INT32 1200;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolbar-icons-size";
+                                          VARIANT "s" {
+                                                  STRING "large";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-antialiasing";
+                                          VARIANT "s" {
+                                                  STRING "grayscale";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolbar-style";
+                                          VARIANT "s" {
+                                                  STRING "both-horiz";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "enable-hot-corners";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "monospace-font-name";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Mono 11";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-timeout-repeat";
+                                          VARIANT "i" {
+                                                  INT32 20;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "overlay-scrolling";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-blink-timeout";
+                                          VARIANT "i" {
+                                                  INT32 10;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-key-theme";
+                                          VARIANT "s" {
+                                                  STRING "Default";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "toolbar-detachable";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-rendering";
+                                          VARIANT "s" {
+                                                  STRING "automatic";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "cursor-theme";
+                                          VARIANT "s" {
+                                                  STRING "default";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "avatar-directories";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-im-status-style";
+                                          VARIANT "s" {
+                                                  STRING "callback";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "menubar-detachable";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "text-scaling-factor";
+                                          VARIANT "d" {
+                                                  DOUBLE 1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-battery-percentage";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "clock-format";
+                                          VARIANT "s" {
+                                                  STRING "12h";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "menubar-accel";
+                                          VARIANT "s" {
+                                                  STRING "F10";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "gtk-enable-primary-paste";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "s" {
+                                                  STRING "prefer-light";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "locate-pointer";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-rgba-order";
+                                          VARIANT "s" {
+                                                  STRING "rgb";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-hinting";
+                                          VARIANT "s" {
+                                                  STRING "slight";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "font-name";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Sans 11";
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.sound";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "theme-name";
+                                          VARIANT "s" {
+                                                  STRING "freedesktop";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "event-sounds";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "input-feedback-sounds";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "allow-volume-above-100-percent";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.peripherals.mouse";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "custom-accel-config";
+                                          VARIANT "a{sv}" {
+                                                  ARRAY "{sv}" {
+                                                          DICT_ENTRY "sv" {
+                                                                  STRING "pointer-step";
+                                                                  VARIANT "d" {
+                                                                          DOUBLE 1;
+                                                                  };
+                                                          };
+                                                          DICT_ENTRY "sv" {
+                                                                  STRING "pointer-speeds";
+                                                                  VARIANT "ad" {
+                                                                          ARRAY "d" {
+                                                                                  DOUBLE 0;
+                                                                                  DOUBLE 1;
+                                                                          };
+                                                                  };
+                                                          };
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "double-click";
+                                          VARIANT "i" {
+                                                  INT32 400;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "accel-profile";
+                                          VARIANT "s" {
+                                                  STRING "default";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "drag-threshold";
+                                          VARIANT "i" {
+                                                  INT32 8;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "scroll-wheel-emulation-button-lock";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "speed";
+                                          VARIANT "d" {
+                                                  DOUBLE 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "natural-scroll";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "middle-click-emulation";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "left-handed";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "scroll-wheel-emulation-button";
+                                          VARIANT "i" {
+                                                  INT32 0;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.appearance";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "contrast";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "u" {
+                                                  UINT32 2;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.input-sources";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "sources";
+                                          VARIANT "a(ss)" {
+                                                  ARRAY "(ss)" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "mru-sources";
+                                          VARIANT "a(ss)" {
+                                                  ARRAY "(ss)" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-all-sources";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "current";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "xkb-options";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "xkb-model";
+                                          VARIANT "s" {
+                                                  STRING "pc105+inet";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "per-window";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.calendar";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-weekdate";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "week-start-day";
+                                          VARIANT "s" {
+                                                  STRING "default";
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.wm.preferences";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "theme";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "focus-new-windows";
+                                          VARIANT "s" {
+                                                  STRING "smart";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "disable-workarounds";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "num-workspaces";
+                                          VARIANT "i" {
+                                                  INT32 4;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "titlebar-uses-system-font";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "raise-on-click";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "titlebar-font";
+                                          VARIANT "s" {
+                                                  STRING "Adwaita Sans Bold 11";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "resize-with-right-button";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "auto-raise";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "action-right-click-titlebar";
+                                          VARIANT "s" {
+                                                  STRING "menu";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "mouse-button-modifier";
+                                          VARIANT "s" {
+                                                  STRING "<Super>";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "action-double-click-titlebar";
+                                          VARIANT "s" {
+                                                  STRING "toggle-maximize";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "workspace-names";
+                                          VARIANT "as" {
+                                                  ARRAY "s" {
+                                                  };
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "visual-bell-type";
+                                          VARIANT "s" {
+                                                  STRING "fullscreen-flash";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "action-middle-click-titlebar";
+                                          VARIANT "s" {
+                                                  STRING "none";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "focus-mode";
+                                          VARIANT "s" {
+                                                  STRING "click";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "button-layout";
+                                          VARIANT "s" {
+                                                  STRING "appmenu:close";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "auto-raise-delay";
+                                          VARIANT "i" {
+                                                  INT32 500;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "audible-bell";
+                                          VARIANT "b" {
+                                                  BOOLEAN true;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "visual-bell";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=13  Timestamp="Fri 2026-10-09 06:57:43.236427 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=StartServiceByName
+  UniqueName=:1.213
+  MESSAGE "su" {
+          STRING "org.freedesktop.portal.Desktop";
+          UINT32 0;
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=13  Timestamp="Fri 2026-10-09 06:57:43.236464 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "u" {
+          UINT32 2;
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=14  Timestamp="Fri 2026-10-09 06:57:43.236500 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "org.freedesktop.portal.Desktop";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=14  Timestamp="Fri 2026-10-09 06:57:43.236505 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "s" {
+          STRING ":1.7";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=15  Timestamp="Fri 2026-10-09 06:57:43.236544 UTC"
+  Sender=:1.213  Destination=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.DBus.Properties  Member=GetAll
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "org.freedesktop.portal.Settings";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=537  ReplyCookie=15  Timestamp="Fri 2026-10-09 06:57:43.236684 UTC"
+  Sender=:1.7  Destination=:1.213
+  UniqueName=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "version";
+                          VARIANT "u" {
+                                  UINT32 2;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=16  Timestamp="Fri 2026-10-09 06:57:43.236746 UTC"
+  Sender=:1.213  Destination=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=Read
+  UniqueName=:1.213
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=538  Timestamp="Fri 2026-10-09 06:57:43.236866 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=Read
+  UniqueName=:1.7
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=168  ReplyCookie=538  Timestamp="Fri 2026-10-09 06:57:43.237039 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=539  ReplyCookie=16  Timestamp="Fri 2026-10-09 06:57:43.237104 UTC"
+  Sender=:1.7  Destination=:1.213
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "v" {
+                  VARIANT "u" {
+                          UINT32 2;
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=17  Timestamp="Fri 2026-10-09 06:57:43.237163 UTC"
+  Sender=:1.213  Destination=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=Read
+  UniqueName=:1.213
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "contrast";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=540  Timestamp="Fri 2026-10-09 06:57:43.237234 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=Read
+  UniqueName=:1.7
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "contrast";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=169  ReplyCookie=540  Timestamp="Fri 2026-10-09 06:57:43.237330 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 0;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=541  ReplyCookie=17  Timestamp="Fri 2026-10-09 06:57:43.237371 UTC"
+  Sender=:1.7  Destination=:1.213
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "v" {
+                  VARIANT "u" {
+                          UINT32 0;
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=18  Timestamp="Fri 2026-10-09 06:57:43.237440 UTC"
+  Sender=:1.213  Destination=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=Read
+  UniqueName=:1.213
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "accent-color";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=542  Timestamp="Fri 2026-10-09 06:57:43.237512 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=Read
+  UniqueName=:1.7
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "accent-color";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=170  ReplyCookie=542  Timestamp="Fri 2026-10-09 06:57:43.237609 UTC"
+  Sender=:1.10  Destination=:1.7
+  ErrorName=org.freedesktop.portal.Error.NotFound  ErrorMessage="Requested setting not found"
+  UniqueName=:1.10
+  MESSAGE "s" {
+          STRING "Requested setting not found";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=543  ReplyCookie=18  Timestamp="Fri 2026-10-09 06:57:43.237684 UTC"
+  Sender=:1.7  Destination=:1.213
+  ErrorName=org.freedesktop.portal.Error.NotFound  ErrorMessage="Requested setting not found"
+  UniqueName=:1.7
+  MESSAGE "s" {
+          STRING "Requested setting not found";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=19  Timestamp="Fri 2026-10-09 06:57:43.238279 UTC"
+  Sender=:1.213  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.213
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=19  Timestamp="Fri 2026-10-09 06:57:43.238296 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=9  Timestamp="Fri 2026-10-09 06:57:43.240797 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',path='/org/freedesktop/DBus',arg0='org.gtk.Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=9  Timestamp="Fri 2026-10-09 06:57:43.240829 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=10  Timestamp="Fri 2026-10-09 06:57:43.240850 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "org.gtk.Settings";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=10  Timestamp="Fri 2026-10-09 06:57:43.240859 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  ErrorName=org.freedesktop.DBus.Error.NameHasNoOwner  ErrorMessage="The name does not have an owner"
+  MESSAGE "s" {
+          STRING "The name does not have an owner";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=11  Timestamp="Fri 2026-10-09 06:57:43.240865 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.gtk.Settings',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged',path='/org/gtk/Settings',arg0='org.gtk.Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=11  Timestamp="Fri 2026-10-09 06:57:43.240871 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=12  Timestamp="Fri 2026-10-09 06:57:43.240876 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.gtk.Settings',interface='org.gtk.Settings',path='/org/gtk/Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=12  Timestamp="Fri 2026-10-09 06:57:43.240882 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=13  Timestamp="Fri 2026-10-09 06:57:43.240886 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=StartServiceByName
+  UniqueName=:1.210
+  MESSAGE "su" {
+          STRING "org.gtk.Settings";
+          UINT32 0;
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=13  Timestamp="Fri 2026-10-09 06:57:43.240892 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  ErrorName=org.freedesktop.DBus.Error.ServiceUnknown  ErrorMessage="The name is not activatable"
+  MESSAGE "s" {
+          STRING "The name is not activatable";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=14  Timestamp="Fri 2026-10-09 06:57:43.240903 UTC"
+  Sender=:1.210  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.210
+  MESSAGE "s" {
+          STRING "org.gtk.Settings";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=14  Timestamp="Fri 2026-10-09 06:57:43.240909 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210
+  ErrorName=org.freedesktop.DBus.Error.NameHasNoOwner  ErrorMessage="The name does not have an owner"
+  MESSAGE "s" {
+          STRING "The name does not have an owner";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=6  Timestamp="Fri 2026-10-09 06:57:43.242766 UTC"
+  Sender=:1.209  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=ReadAll
+  UniqueName=:1.209
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.appearance";
+                  STRING "org.gnome.desktop.a11y.interface";
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=544  Timestamp="Fri 2026-10-09 06:57:43.242935 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=ReadAll
+  UniqueName=:1.7
+  MESSAGE "as" {
+          ARRAY "s" {
+                  STRING "org.freedesktop.appearance";
+                  STRING "org.gnome.desktop.a11y.interface";
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=171  ReplyCookie=544  Timestamp="Fri 2026-10-09 06:57:43.243288 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "keyboard-focus-visible-timeout";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "reduced-motion";
+                                          VARIANT "s" {
+                                                  STRING "no-preference";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-status-shapes";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "high-contrast";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.appearance";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "contrast";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "u" {
+                                                  UINT32 2;
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=545  ReplyCookie=6  Timestamp="Fri 2026-10-09 06:57:43.243395 UTC"
+  Sender=:1.7  Destination=:1.209
+  UniqueName=:1.7
+  MESSAGE "a{sa{sv}}" {
+          ARRAY "{sa{sv}}" {
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.freedesktop.appearance";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "contrast";
+                                          VARIANT "u" {
+                                                  UINT32 0;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "color-scheme";
+                                          VARIANT "u" {
+                                                  UINT32 2;
+                                          };
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sa{sv}" {
+                          STRING "org.gnome.desktop.a11y.interface";
+                          ARRAY "{sv}" {
+                                  DICT_ENTRY "sv" {
+                                          STRING "keyboard-focus-visible-timeout";
+                                          VARIANT "i" {
+                                                  INT32 -1;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "reduced-motion";
+                                          VARIANT "s" {
+                                                  STRING "no-preference";
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "show-status-shapes";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                                  DICT_ENTRY "sv" {
+                                          STRING "high-contrast";
+                                          VARIANT "b" {
+                                                  BOOLEAN false;
+                                          };
+                                  };
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=1  Version=1 Cookie=7  Timestamp="Fri 2026-10-09 06:57:43.249258 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0='org.a11y.Bus'";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=8  Timestamp="Fri 2026-10-09 06:57:43.249306 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "org.a11y.Bus";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=8  Timestamp="Fri 2026-10-09 06:57:43.249311 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209
+  MESSAGE "s" {
+          STRING ":1.12";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=9  Timestamp="Fri 2026-10-09 06:57:43.249382 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "org.a11y.Bus";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=9  Timestamp="Fri 2026-10-09 06:57:43.249387 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209
+  MESSAGE "s" {
+          STRING ":1.12";
+  };
+
+‣ Type=method_call  Endian=l  Flags=1  Version=1 Cookie=10  Timestamp="Fri 2026-10-09 06:57:43.249429 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0='org.a11y.Bus',arg1=''";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=11  Timestamp="Fri 2026-10-09 06:57:43.249449 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameHasOwner
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "org.a11y.Bus";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=11  Timestamp="Fri 2026-10-09 06:57:43.249452 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209
+  MESSAGE "b" {
+          BOOLEAN true;
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=12  Timestamp="Fri 2026-10-09 06:57:43.249487 UTC"
+  Sender=:1.209  Destination=org.a11y.Bus  Path=/org/a11y/bus  Interface=org.freedesktop.DBus.Properties  Member=Get
+  UniqueName=:1.209
+  MESSAGE "ss" {
+          STRING "org.a11y.Status";
+          STRING "ScreenReaderEnabled";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=72  ReplyCookie=12  Timestamp="Fri 2026-10-09 06:57:43.249643 UTC"
+  Sender=:1.12  Destination=:1.209
+  ErrorName=org.freedesktop.DBus.Error.InvalidArgs  ErrorMessage="No such property “ScreenReaderEnabled”"
+  UniqueName=:1.12
+  MESSAGE "s" {
+          STRING "No such property “ScreenReaderEnabled”";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=13  Timestamp="Fri 2026-10-09 06:57:43.249676 UTC"
+  Sender=:1.209  Destination=org.a11y.Bus  Path=/org/a11y/bus  Interface=org.freedesktop.DBus.Properties  Member=Get
+  UniqueName=:1.209
+  MESSAGE "ss" {
+          STRING "org.a11y.Status";
+          STRING "IsEnabled";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=73  ReplyCookie=13  Timestamp="Fri 2026-10-09 06:57:43.249755 UTC"
+  Sender=:1.12  Destination=:1.209
+  UniqueName=:1.12
+  MESSAGE "v" {
+          VARIANT "b" {
+                  BOOLEAN false;
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=1  Version=1 Cookie=14  Timestamp="Fri 2026-10-09 06:57:43.249798 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.a11y.Bus',path='/org/a11y/bus',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged'";
+  };
+
+‣ Type=method_call  Endian=l  Flags=1  Version=1 Cookie=15  Timestamp="Fri 2026-10-09 06:57:43.249808 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',arg0='org.a11y.Bus'";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=16  Timestamp="Fri 2026-10-09 06:57:43.249815 UTC"
+  Sender=:1.209  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.209
+  MESSAGE "s" {
+          STRING "org.a11y.Bus";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=16  Timestamp="Fri 2026-10-09 06:57:43.249819 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209
+  MESSAGE "s" {
+          STRING ":1.12";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=9  Timestamp="Fri 2026-10-09 06:57:43.257339 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.freedesktop.DBus',interface='org.freedesktop.DBus',member='NameOwnerChanged',path='/org/freedesktop/DBus',arg0='org.gtk.Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=9  Timestamp="Fri 2026-10-09 06:57:43.257365 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=10  Timestamp="Fri 2026-10-09 06:57:43.257372 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "org.gtk.Settings";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=10  Timestamp="Fri 2026-10-09 06:57:43.257379 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  ErrorName=org.freedesktop.DBus.Error.NameHasNoOwner  ErrorMessage="The name does not have an owner"
+  MESSAGE "s" {
+          STRING "The name does not have an owner";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=11  Timestamp="Fri 2026-10-09 06:57:43.257384 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.gtk.Settings',interface='org.freedesktop.DBus.Properties',member='PropertiesChanged',path='/org/gtk/Settings',arg0='org.gtk.Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=11  Timestamp="Fri 2026-10-09 06:57:43.257390 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=12  Timestamp="Fri 2026-10-09 06:57:43.257400 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "type='signal',sender='org.gtk.Settings',interface='org.gtk.Settings',path='/org/gtk/Settings'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=12  Timestamp="Fri 2026-10-09 06:57:43.257405 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=13  Timestamp="Fri 2026-10-09 06:57:43.257410 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=StartServiceByName
+  UniqueName=:1.211
+  MESSAGE "su" {
+          STRING "org.gtk.Settings";
+          UINT32 0;
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=13  Timestamp="Fri 2026-10-09 06:57:43.257415 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  ErrorName=org.freedesktop.DBus.Error.ServiceUnknown  ErrorMessage="The name is not activatable"
+  MESSAGE "s" {
+          STRING "The name is not activatable";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=14  Timestamp="Fri 2026-10-09 06:57:43.259858 UTC"
+  Sender=:1.211  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetNameOwner
+  UniqueName=:1.211
+  MESSAGE "s" {
+          STRING "org.gtk.Settings";
+  };
+
+‣ Type=error  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=14  Timestamp="Fri 2026-10-09 06:57:43.259895 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211
+  ErrorName=org.freedesktop.DBus.Error.NameHasNoOwner  ErrorMessage="The name does not have an owner"
+  MESSAGE "s" {
+          STRING "The name does not have an owner";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=20  Timestamp="Fri 2026-10-09 06:57:43.265253 UTC"
+  Sender=:1.213  Destination=org.a11y.Bus  Path=/org/a11y/bus  Interface=org.a11y.Bus  Member=GetAddress
+  UniqueName=:1.213
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=74  ReplyCookie=20  Timestamp="Fri 2026-10-09 06:57:43.265440 UTC"
+  Sender=:1.12  Destination=:1.213
+  UniqueName=:1.12
+  MESSAGE "s" {
+          STRING "unix:path=/run/user/1000/at-spi/bus_0";
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=282  Timestamp="Fri 2026-10-09 06:57:44.618946 UTC"
+  Sender=:1.29  Path=/org/chromium/DbusMenu  Interface=com.canonical.dbusmenu  Member=LayoutUpdated
+  UniqueName=:1.29
+  MESSAGE "ui" {
+          UINT32 255;
+          INT32 0;
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=283  Timestamp="Fri 2026-10-09 06:57:44.618994 UTC"
+  Sender=:1.29  Path=/org/chromium/DbusMenu  Interface=com.canonical.dbusmenu  Member=LayoutUpdated
+  UniqueName=:1.29
+  MESSAGE "ui" {
+          UINT32 256;
+          INT32 0;
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=284  Timestamp="Fri 2026-10-09 06:57:44.684109 UTC"
+  Sender=:1.29  Path=/org/chromium/DbusMenu  Interface=com.canonical.dbusmenu  Member=LayoutUpdated
+  UniqueName=:1.29
+  MESSAGE "ui" {
+          UINT32 257;
+          INT32 0;
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=285  Timestamp="Fri 2026-10-09 06:57:44.684220 UTC"
+  Sender=:1.29  Path=/org/chromium/DbusMenu  Interface=com.canonical.dbusmenu  Member=LayoutUpdated
+  UniqueName=:1.29
+  MESSAGE "ui" {
+          UINT32 258;
+          INT32 0;
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=62  Timestamp="Fri 2026-10-09 06:57:44.706640 UTC"
+  Sender=:1.24  Path=/com/canonical/unity/launcherentry/1  Interface=com.canonical.Unity.LauncherEntry  Member=Update
+  UniqueName=:1.24
+  MESSAGE "sa{sv}" {
+          STRING "application://chatgpt.desktop";
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "count";
+                          VARIANT "x" {
+                                  INT64 1;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "count-visible";
+                          VARIANT "b" {
+                                  BOOLEAN true;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:44.866000 UTC"
+  Sender=:1.214  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.214
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:44.866034 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.214
+  MESSAGE "s" {
+          STRING ":1.214";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.866041 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.214";
+          STRING "";
+          STRING ":1.214";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.866046 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.214  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.214";
+  };
+
+‣ Type=method_call  Endian=l  Flags=4  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:44.866050 UTC"
+  Sender=:1.214  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=ReadOne
+  UniqueName=:1.214
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=546  Timestamp="Fri 2026-10-09 06:57:44.866240 UTC"
+  Sender=:1.7  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetConnectionCredentials
+  UniqueName=:1.7
+  MESSAGE "s" {
+          STRING ":1.214";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=546  Timestamp="Fri 2026-10-09 06:57:44.866245 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "UnixUserID";
+                          VARIANT "u" {
+                                  UINT32 1000;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessID";
+                          VARIANT "u" {
+                                  UINT32 43725;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "UnixGroupIDs";
+                          VARIANT "au" {
+                                  ARRAY "u" {
+                                          UINT32 998;
+                                          UINT32 1000;
+                                          UINT32 1000;
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessFD";
+                          VARIANT "h" {
+                                  UNIX_FD 5;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=547  Timestamp="Fri 2026-10-09 06:57:44.866513 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=Read
+  UniqueName=:1.7
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=172  ReplyCookie=547  Timestamp="Fri 2026-10-09 06:57:44.866692 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=548  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:44.866762 UTC"
+  Sender=:1.7  Destination=:1.214
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.866809 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.214  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.214";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.866814 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.214";
+          STRING ":1.214";
+          STRING "";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:44.929085 UTC"
+  Sender=:1.215  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.215
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:44.929109 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.215
+  MESSAGE "s" {
+          STRING ":1.215";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.929116 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.215";
+          STRING "";
+          STRING ":1.215";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.929121 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.215  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.215";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:44.929146 UTC"
+  Sender=:1.215  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.215
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:44.929151 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.215
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:44.929163 UTC"
+  Sender=:1.215  Destination=ca.desrt.dconf  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Change
+  UniqueName=:1.215
+  MESSAGE "ay" {
+          ARRAY "y" {
+                  BYTE 47;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 103;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 110;
+                  BYTE 111;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 100;
+                  BYTE 101;
+                  BYTE 115;
+                  BYTE 107;
+                  BYTE 116;
+                  BYTE 111;
+                  BYTE 112;
+                  BYTE 47;
+                  BYTE 105;
+                  BYTE 110;
+                  BYTE 116;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 102;
+                  BYTE 97;
+                  BYTE 99;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 99;
+                  BYTE 111;
+                  BYTE 108;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 45;
+                  BYTE 115;
+                  BYTE 99;
+                  BYTE 104;
+                  BYTE 101;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 112;
+                  BYTE 114;
+                  BYTE 101;
+                  BYTE 102;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 45;
+                  BYTE 100;
+                  BYTE 97;
+                  BYTE 114;
+                  BYTE 107;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 115;
+                  BYTE 0;
+                  BYTE 42;
+                  BYTE 64;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=105  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:44.935380 UTC"
+  Sender=:1.3  Destination=:1.215
+  UniqueName=:1.3
+  MESSAGE "s" {
+          STRING ":1.3:user:61";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=106  Timestamp="Fri 2026-10-09 06:57:44.935403 UTC"
+  Sender=:1.3  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Notify
+  UniqueName=:1.3
+  MESSAGE "sass" {
+          STRING "/org/gnome/desktop/interface/color-scheme";
+          ARRAY "s" {
+                  STRING "";
+          };
+          STRING ":1.3:user:61";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=173  Timestamp="Fri 2026-10-09 06:57:44.935645 UTC"
+  Sender=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=SettingChanged
+  UniqueName=:1.10
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "color-scheme";
+          VARIANT "s" {
+                  STRING "prefer-dark";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=174  Timestamp="Fri 2026-10-09 06:57:44.935669 UTC"
+  Sender=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=SettingChanged
+  UniqueName=:1.10
+  MESSAGE "ssv" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+          VARIANT "u" {
+                  UINT32 1;
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.935675 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.215  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.215";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.935680 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.215";
+          STRING ":1.215";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=549  Timestamp="Fri 2026-10-09 06:57:44.935801 UTC"
+  Sender=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=SettingChanged
+  UniqueName=:1.7
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "color-scheme";
+          VARIANT "s" {
+                  STRING "prefer-dark";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=550  Timestamp="Fri 2026-10-09 06:57:44.935809 UTC"
+  Sender=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=SettingChanged
+  UniqueName=:1.7
+  MESSAGE "ssv" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+          VARIANT "u" {
+                  UINT32 1;
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:44.942878 UTC"
+  Sender=:1.216  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.216
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:44.942898 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.216
+  MESSAGE "s" {
+          STRING ":1.216";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.942909 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.216";
+          STRING "";
+          STRING ":1.216";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.942914 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.216  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.216";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:44.942976 UTC"
+  Sender=:1.216  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.216
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:44.942981 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.216
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:44.942986 UTC"
+  Sender=:1.216  Destination=ca.desrt.dconf  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Change
+  UniqueName=:1.216
+  MESSAGE "ay" {
+          ARRAY "y" {
+                  BYTE 47;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 103;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 110;
+                  BYTE 111;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 100;
+                  BYTE 101;
+                  BYTE 115;
+                  BYTE 107;
+                  BYTE 116;
+                  BYTE 111;
+                  BYTE 112;
+                  BYTE 47;
+                  BYTE 105;
+                  BYTE 110;
+                  BYTE 116;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 102;
+                  BYTE 97;
+                  BYTE 99;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 116;
+                  BYTE 107;
+                  BYTE 45;
+                  BYTE 116;
+                  BYTE 104;
+                  BYTE 101;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 87;
+                  BYTE 105;
+                  BYTE 122;
+                  BYTE 97;
+                  BYTE 114;
+                  BYTE 100;
+                  BYTE 45;
+                  BYTE 65;
+                  BYTE 100;
+                  BYTE 119;
+                  BYTE 97;
+                  BYTE 105;
+                  BYTE 116;
+                  BYTE 97;
+                  BYTE 45;
+                  BYTE 100;
+                  BYTE 97;
+                  BYTE 114;
+                  BYTE 107;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 115;
+                  BYTE 0;
+                  BYTE 39;
+                  BYTE 64;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=107  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:44.948401 UTC"
+  Sender=:1.3  Destination=:1.216
+  UniqueName=:1.3
+  MESSAGE "s" {
+          STRING ":1.3:user:62";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=108  Timestamp="Fri 2026-10-09 06:57:44.948418 UTC"
+  Sender=:1.3  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Notify
+  UniqueName=:1.3
+  MESSAGE "sass" {
+          STRING "/org/gnome/desktop/interface/gtk-theme";
+          ARRAY "s" {
+                  STRING "";
+          };
+          STRING ":1.3:user:62";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.948758 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.216  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.216";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:44.948777 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.216";
+          STRING ":1.216";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=175  Timestamp="Fri 2026-10-09 06:57:44.960777 UTC"
+  Sender=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=SettingChanged
+  UniqueName=:1.10
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "gtk-theme";
+          VARIANT "s" {
+                  STRING "Wizard-Adwaita-dark";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=551  Timestamp="Fri 2026-10-09 06:57:44.960926 UTC"
+  Sender=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=SettingChanged
+  UniqueName=:1.7
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "gtk-theme";
+          VARIANT "s" {
+                  STRING "Wizard-Adwaita-dark";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=286  Timestamp="Fri 2026-10-09 06:57:45.280476 UTC"
+  Sender=:1.29  Path=/org/chromium/DbusMenu  Interface=com.canonical.dbusmenu  Member=LayoutUpdated
+  UniqueName=:1.29
+  MESSAGE "ui" {
+          UINT32 259;
+          INT32 0;
+  };
+
+‣ Type=signal  Endian=l  Flags=0  Version=1 Cookie=287  Timestamp="Fri 2026-10-09 06:57:45.280614 UTC"
+  Sender=:1.29  Path=/org/chromium/DbusMenu  Interface=com.canonical.dbusmenu  Member=LayoutUpdated
+  UniqueName=:1.29
+  MESSAGE "ui" {
+          UINT32 260;
+          INT32 0;
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:45.609032 UTC"
+  Sender=:1.217  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.217
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:45.609084 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.217
+  MESSAGE "s" {
+          STRING ":1.217";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.609105 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.217";
+          STRING "";
+          STRING ":1.217";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.609124 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.217  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.217";
+  };
+
+‣ Type=method_call  Endian=l  Flags=4  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:45.609142 UTC"
+  Sender=:1.217  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=ReadOne
+  UniqueName=:1.217
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=552  Timestamp="Fri 2026-10-09 06:57:45.609683 UTC"
+  Sender=:1.7  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetConnectionCredentials
+  UniqueName=:1.7
+  MESSAGE "s" {
+          STRING ":1.217";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=552  Timestamp="Fri 2026-10-09 06:57:45.609713 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "UnixUserID";
+                          VARIANT "u" {
+                                  UINT32 1000;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessID";
+                          VARIANT "u" {
+                                  UINT32 43781;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "UnixGroupIDs";
+                          VARIANT "au" {
+                                  ARRAY "u" {
+                                          UINT32 998;
+                                          UINT32 1000;
+                                          UINT32 1000;
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessFD";
+                          VARIANT "h" {
+                                  UNIX_FD 5;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=553  Timestamp="Fri 2026-10-09 06:57:45.610386 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=Read
+  UniqueName=:1.7
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=176  ReplyCookie=553  Timestamp="Fri 2026-10-09 06:57:45.610932 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 1;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=554  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:45.611397 UTC"
+  Sender=:1.7  Destination=:1.217
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 1;
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.611453 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.217  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.217";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.611459 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.217";
+          STRING ":1.217";
+          STRING "";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:45.666756 UTC"
+  Sender=:1.218  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.218
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:45.666805 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.218
+  MESSAGE "s" {
+          STRING ":1.218";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.666828 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.218";
+          STRING "";
+          STRING ":1.218";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.666855 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.218  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.218";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:45.666875 UTC"
+  Sender=:1.218  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.218
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:45.666894 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.218
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:45.666910 UTC"
+  Sender=:1.218  Destination=ca.desrt.dconf  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Change
+  UniqueName=:1.218
+  MESSAGE "ay" {
+          ARRAY "y" {
+                  BYTE 47;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 103;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 110;
+                  BYTE 111;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 100;
+                  BYTE 101;
+                  BYTE 115;
+                  BYTE 107;
+                  BYTE 116;
+                  BYTE 111;
+                  BYTE 112;
+                  BYTE 47;
+                  BYTE 105;
+                  BYTE 110;
+                  BYTE 116;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 102;
+                  BYTE 97;
+                  BYTE 99;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 99;
+                  BYTE 111;
+                  BYTE 108;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 45;
+                  BYTE 115;
+                  BYTE 99;
+                  BYTE 104;
+                  BYTE 101;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 112;
+                  BYTE 114;
+                  BYTE 101;
+                  BYTE 102;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 45;
+                  BYTE 108;
+                  BYTE 105;
+                  BYTE 103;
+                  BYTE 104;
+                  BYTE 116;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 115;
+                  BYTE 0;
+                  BYTE 42;
+                  BYTE 65;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=109  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:45.673028 UTC"
+  Sender=:1.3  Destination=:1.218
+  UniqueName=:1.3
+  MESSAGE "s" {
+          STRING ":1.3:user:63";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=110  Timestamp="Fri 2026-10-09 06:57:45.673070 UTC"
+  Sender=:1.3  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Notify
+  UniqueName=:1.3
+  MESSAGE "sass" {
+          STRING "/org/gnome/desktop/interface/color-scheme";
+          ARRAY "s" {
+                  STRING "";
+          };
+          STRING ":1.3:user:63";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.673285 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.218  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.218";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.673301 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.218";
+          STRING ":1.218";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=177  Timestamp="Fri 2026-10-09 06:57:45.673307 UTC"
+  Sender=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=SettingChanged
+  UniqueName=:1.10
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "color-scheme";
+          VARIANT "s" {
+                  STRING "prefer-light";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=178  Timestamp="Fri 2026-10-09 06:57:45.673314 UTC"
+  Sender=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=SettingChanged
+  UniqueName=:1.10
+  MESSAGE "ssv" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=555  Timestamp="Fri 2026-10-09 06:57:45.673390 UTC"
+  Sender=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=SettingChanged
+  UniqueName=:1.7
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "color-scheme";
+          VARIANT "s" {
+                  STRING "prefer-light";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=556  Timestamp="Fri 2026-10-09 06:57:45.673398 UTC"
+  Sender=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=SettingChanged
+  UniqueName=:1.7
+  MESSAGE "ssv" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:45.680594 UTC"
+  Sender=:1.219  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.219
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:45.680611 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.219
+  MESSAGE "s" {
+          STRING ":1.219";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.680616 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.219";
+          STRING "";
+          STRING ":1.219";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.680621 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.219  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.219";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:45.680682 UTC"
+  Sender=:1.219  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.219
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:45.680690 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.219
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:45.680695 UTC"
+  Sender=:1.219  Destination=ca.desrt.dconf  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Change
+  UniqueName=:1.219
+  MESSAGE "ay" {
+          ARRAY "y" {
+                  BYTE 47;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 103;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 110;
+                  BYTE 111;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 100;
+                  BYTE 101;
+                  BYTE 115;
+                  BYTE 107;
+                  BYTE 116;
+                  BYTE 111;
+                  BYTE 112;
+                  BYTE 47;
+                  BYTE 105;
+                  BYTE 110;
+                  BYTE 116;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 102;
+                  BYTE 97;
+                  BYTE 99;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 116;
+                  BYTE 107;
+                  BYTE 45;
+                  BYTE 116;
+                  BYTE 104;
+                  BYTE 101;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 87;
+                  BYTE 105;
+                  BYTE 122;
+                  BYTE 97;
+                  BYTE 114;
+                  BYTE 100;
+                  BYTE 45;
+                  BYTE 65;
+                  BYTE 100;
+                  BYTE 119;
+                  BYTE 97;
+                  BYTE 105;
+                  BYTE 116;
+                  BYTE 97;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 115;
+                  BYTE 0;
+                  BYTE 39;
+                  BYTE 59;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=111  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:45.685979 UTC"
+  Sender=:1.3  Destination=:1.219
+  UniqueName=:1.3
+  MESSAGE "s" {
+          STRING ":1.3:user:64";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=112  Timestamp="Fri 2026-10-09 06:57:45.685995 UTC"
+  Sender=:1.3  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Notify
+  UniqueName=:1.3
+  MESSAGE "sass" {
+          STRING "/org/gnome/desktop/interface/gtk-theme";
+          ARRAY "s" {
+                  STRING "";
+          };
+          STRING ":1.3:user:64";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.686226 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.219  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.219";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:45.686241 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.219";
+          STRING ":1.219";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=179  Timestamp="Fri 2026-10-09 06:57:45.698482 UTC"
+  Sender=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=SettingChanged
+  UniqueName=:1.10
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "gtk-theme";
+          VARIANT "s" {
+                  STRING "Wizard-Adwaita";
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=557  Timestamp="Fri 2026-10-09 06:57:45.698629 UTC"
+  Sender=:1.7  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=SettingChanged
+  UniqueName=:1.7
+  MESSAGE "ssv" {
+          STRING "org.gnome.desktop.interface";
+          STRING "gtk-theme";
+          VARIANT "s" {
+                  STRING "Wizard-Adwaita";
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:46.347595 UTC"
+  Sender=:1.220  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.220
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:46.347659 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.220
+  MESSAGE "s" {
+          STRING ":1.220";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.347679 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.220";
+          STRING "";
+          STRING ":1.220";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.347703 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.220  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.220";
+  };
+
+‣ Type=method_call  Endian=l  Flags=4  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:46.347722 UTC"
+  Sender=:1.220  Destination=org.freedesktop.portal.Desktop  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.portal.Settings  Member=ReadOne
+  UniqueName=:1.220
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=558  Timestamp="Fri 2026-10-09 06:57:46.348304 UTC"
+  Sender=:1.7  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=GetConnectionCredentials
+  UniqueName=:1.7
+  MESSAGE "s" {
+          STRING ":1.220";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=558  Timestamp="Fri 2026-10-09 06:57:46.348355 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.7
+  MESSAGE "a{sv}" {
+          ARRAY "{sv}" {
+                  DICT_ENTRY "sv" {
+                          STRING "UnixUserID";
+                          VARIANT "u" {
+                                  UINT32 1000;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessID";
+                          VARIANT "u" {
+                                  UINT32 43831;
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "UnixGroupIDs";
+                          VARIANT "au" {
+                                  ARRAY "u" {
+                                          UINT32 998;
+                                          UINT32 1000;
+                                          UINT32 1000;
+                                  };
+                          };
+                  };
+                  DICT_ENTRY "sv" {
+                          STRING "ProcessFD";
+                          VARIANT "h" {
+                                  UNIX_FD 5;
+                          };
+                  };
+          };
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=559  Timestamp="Fri 2026-10-09 06:57:46.349087 UTC"
+  Sender=:1.7  Destination=:1.10  Path=/org/freedesktop/portal/desktop  Interface=org.freedesktop.impl.portal.Settings  Member=Read
+  UniqueName=:1.7
+  MESSAGE "ss" {
+          STRING "org.freedesktop.appearance";
+          STRING "color-scheme";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=180  ReplyCookie=559  Timestamp="Fri 2026-10-09 06:57:46.349551 UTC"
+  Sender=:1.10  Destination=:1.7
+  UniqueName=:1.10
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=560  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:46.349989 UTC"
+  Sender=:1.7  Destination=:1.220
+  UniqueName=:1.7
+  MESSAGE "v" {
+          VARIANT "u" {
+                  UINT32 2;
+          };
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.350129 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.220  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.220";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.350150 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.220";
+          STRING ":1.220";
+          STRING "";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:46.406332 UTC"
+  Sender=:1.221  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.221
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:46.406351 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.221
+  MESSAGE "s" {
+          STRING ":1.221";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.406360 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.221";
+          STRING "";
+          STRING ":1.221";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.406377 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.221  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.221";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:46.406516 UTC"
+  Sender=:1.221  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.221
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:46.406524 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.221
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:46.406531 UTC"
+  Sender=:1.221  Destination=ca.desrt.dconf  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Change
+  UniqueName=:1.221
+  MESSAGE "ay" {
+          ARRAY "y" {
+                  BYTE 47;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 103;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 110;
+                  BYTE 111;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 100;
+                  BYTE 101;
+                  BYTE 115;
+                  BYTE 107;
+                  BYTE 116;
+                  BYTE 111;
+                  BYTE 112;
+                  BYTE 47;
+                  BYTE 105;
+                  BYTE 110;
+                  BYTE 116;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 102;
+                  BYTE 97;
+                  BYTE 99;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 99;
+                  BYTE 111;
+                  BYTE 108;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 45;
+                  BYTE 115;
+                  BYTE 99;
+                  BYTE 104;
+                  BYTE 101;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 112;
+                  BYTE 114;
+                  BYTE 101;
+                  BYTE 102;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 45;
+                  BYTE 108;
+                  BYTE 105;
+                  BYTE 103;
+                  BYTE 104;
+                  BYTE 116;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 115;
+                  BYTE 0;
+                  BYTE 42;
+                  BYTE 65;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=113  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:46.406652 UTC"
+  Sender=:1.3  Destination=:1.221
+  UniqueName=:1.3
+  MESSAGE "s" {
+          STRING ":1.3:user:65";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.407158 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.221  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.221";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.407171 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.221";
+          STRING ":1.221";
+          STRING "";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=1  Timestamp="Fri 2026-10-09 06:57:46.411692 UTC"
+  Sender=:1.222  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=Hello
+  UniqueName=:1.222
+  MESSAGE "" {
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=1  Timestamp="Fri 2026-10-09 06:57:46.411707 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.222
+  MESSAGE "s" {
+          STRING ":1.222";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.411715 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.222";
+          STRING "";
+          STRING ":1.222";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.411720 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.222  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameAcquired
+  MESSAGE "s" {
+          STRING ":1.222";
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=2  Timestamp="Fri 2026-10-09 06:57:46.411895 UTC"
+  Sender=:1.222  Destination=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=AddMatch
+  UniqueName=:1.222
+  MESSAGE "s" {
+          STRING "type='signal',interface='ca.desrt.dconf.Writer',path='/ca/desrt/dconf/Writer/user',arg0path='/org/gnome/desktop/interface/'";
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=-1  ReplyCookie=2  Timestamp="Fri 2026-10-09 06:57:46.411903 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.222
+  MESSAGE "" {
+  };
+
+‣ Type=method_call  Endian=l  Flags=0  Version=1 Cookie=3  Timestamp="Fri 2026-10-09 06:57:46.411920 UTC"
+  Sender=:1.222  Destination=ca.desrt.dconf  Path=/ca/desrt/dconf/Writer/user  Interface=ca.desrt.dconf.Writer  Member=Change
+  UniqueName=:1.222
+  MESSAGE "ay" {
+          ARRAY "y" {
+                  BYTE 47;
+                  BYTE 111;
+                  BYTE 114;
+                  BYTE 103;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 110;
+                  BYTE 111;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 100;
+                  BYTE 101;
+                  BYTE 115;
+                  BYTE 107;
+                  BYTE 116;
+                  BYTE 111;
+                  BYTE 112;
+                  BYTE 47;
+                  BYTE 105;
+                  BYTE 110;
+                  BYTE 116;
+                  BYTE 101;
+                  BYTE 114;
+                  BYTE 102;
+                  BYTE 97;
+                  BYTE 99;
+                  BYTE 101;
+                  BYTE 47;
+                  BYTE 103;
+                  BYTE 116;
+                  BYTE 107;
+                  BYTE 45;
+                  BYTE 116;
+                  BYTE 104;
+                  BYTE 101;
+                  BYTE 109;
+                  BYTE 101;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 87;
+                  BYTE 105;
+                  BYTE 122;
+                  BYTE 97;
+                  BYTE 114;
+                  BYTE 100;
+                  BYTE 45;
+                  BYTE 65;
+                  BYTE 100;
+                  BYTE 119;
+                  BYTE 97;
+                  BYTE 105;
+                  BYTE 116;
+                  BYTE 97;
+                  BYTE 0;
+                  BYTE 0;
+                  BYTE 115;
+                  BYTE 0;
+                  BYTE 39;
+                  BYTE 59;
+          };
+  };
+
+‣ Type=method_return  Endian=l  Flags=1  Version=1 Cookie=114  ReplyCookie=3  Timestamp="Fri 2026-10-09 06:57:46.412012 UTC"
+  Sender=:1.3  Destination=:1.222
+  UniqueName=:1.3
+  MESSAGE "s" {
+          STRING ":1.3:user:66";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.412271 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.222  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.222";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.412275 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.222";
+          STRING ":1.222";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.420647 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.210  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.210";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.420663 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.210";
+          STRING ":1.210";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.424086 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.213  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.213";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.424097 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.213";
+          STRING ":1.213";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.437509 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.211  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.211";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.437525 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.211";
+          STRING ":1.211";
+          STRING "";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.437532 UTC"
+  Sender=org.freedesktop.DBus  Destination=:1.209  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameLost
+  MESSAGE "s" {
+          STRING ":1.209";
+  };
+
+‣ Type=signal  Endian=l  Flags=1  Version=1 Cookie=-1  Timestamp="Fri 2026-10-09 06:57:46.437537 UTC"
+  Sender=org.freedesktop.DBus  Path=/org/freedesktop/DBus  Interface=org.freedesktop.DBus  Member=NameOwnerChanged
+  MESSAGE "sss" {
+          STRING ":1.209";
+          STRING ":1.209";
+          STRING "";
+  };
+

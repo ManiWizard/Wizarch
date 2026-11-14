@@ -1,0 +1,4 @@
+#include <adwaita.h>
+#include <stdio.h>
+static void report(GObject*s,GParamSpec*p,gpointer data){printf("scheme=%d dark=%d\n",adw_style_manager_get_color_scheme(ADW_STYLE_MANAGER(s)),adw_style_manager_get_dark(ADW_STYLE_MANAGER(s)));fflush(stdout);}
+int main(int argc,char**argv){gtk_init();adw_init();GtkWidget*w=gtk_window_new();gtk_window_set_title(GTK_WINDOW(w),"Wizard desktop mode verification — Adwaita");GtkWidget*b=gtk_button_new_with_label("GTK4 / libadwaita system theme button");gtk_window_set_child(GTK_WINDOW(w),b);gtk_window_set_default_size(GTK_WINDOW(w),350,150);AdwStyleManager*s=adw_style_manager_get_default();g_signal_connect(s,"notify::dark",G_CALLBACK(report),NULL);report(G_OBJECT(s),NULL,NULL);gtk_window_present(GTK_WINDOW(w));GMainLoop*l=g_main_loop_new(NULL,FALSE);g_main_loop_run(l);}

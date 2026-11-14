@@ -1,0 +1,1 @@
+PASS: 36 additional actual controls captures; selection/caret/context menu/mode popup/tooltip in all six modes

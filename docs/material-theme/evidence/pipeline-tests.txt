@@ -1,0 +1,32 @@
+test_bundles_exact_roles_and_contrast (__main__.Pipeline.test_bundles_exact_roles_and_contrast) ... ok
+test_catalog_refresh_invalidation (__main__.Pipeline.test_catalog_refresh_invalidation) ... ok
+test_compositor_rejection_and_rollback_failure (__main__.Pipeline.test_compositor_rejection_and_rollback_failure) ... ok
+test_corrupt_active_last_good (__main__.Pipeline.test_corrupt_active_last_good) ... ok
+test_corrupt_cache_revalidated (__main__.Pipeline.test_corrupt_cache_revalidated) ... ok
+test_cross_process_serialization (__main__.Pipeline.test_cross_process_serialization) ... ok
+test_event_catalog_watcher_ignores_activation_state (__main__.Pipeline.test_event_catalog_watcher_ignores_activation_state) ... ok
+test_export_conversion_and_conflicting_input (__main__.Pipeline.test_export_conversion_and_conflicting_input) ... ok
+test_exports_preserved_no_regeneration (__main__.Pipeline.test_exports_preserved_no_regeneration) ... ok
+test_independent_mode_wallpaper_persistence_and_idempotence (__main__.Pipeline.test_independent_mode_wallpaper_persistence_and_idempotence) ... ok
+test_independent_overrides_and_invalid_override (__main__.Pipeline.test_independent_overrides_and_invalid_override) ... ok
+test_interrupt_at_each_phase_and_startup_reconcile (__main__.Pipeline.test_interrupt_at_each_phase_and_startup_reconcile) ... ok
+test_invalid_requests_preserve_current (__main__.Pipeline.test_invalid_requests_preserve_current) ... ok
+test_json_overflow_and_large_metadata_cache_bound (__main__.Pipeline.test_json_overflow_and_large_metadata_cache_bound) ... ok
+test_local_import_and_duplicate_ids (__main__.Pipeline.test_local_import_and_duplicate_ids) ... ok
+test_migration_corrupt_and_unavailable_selection (__main__.Pipeline.test_migration_corrupt_and_unavailable_selection) ... ok
+test_missing_optional_and_required_are_visible (__main__.Pipeline.test_missing_optional_and_required_are_visible) ... ok
+test_missing_private_asset_diagnostic (__main__.Pipeline.test_missing_private_asset_diagnostic) ... ok
+test_post_commit_finalization_warning_and_recovery_history (__main__.Pipeline.test_post_commit_finalization_warning_and_recovery_history) ... ok
+test_preference_strict_bounds_enums_booleans (__main__.Pipeline.test_preference_strict_bounds_enums_booleans) ... ok
+test_removed_wallpaper_keeps_compatible_choice_or_default (__main__.Pipeline.test_removed_wallpaper_keeps_compatible_choice_or_default) ... ok
+test_rollback_restores_snapshot_and_color_only_lua (__main__.Pipeline.test_rollback_restores_snapshot_and_color_only_lua) ... ok
+test_safe_paths_symlinks_assets (__main__.Pipeline.test_safe_paths_symlinks_assets) ... ok
+test_schema_bad_types_fields_versions_modes_colors (__main__.Pipeline.test_schema_bad_types_fields_versions_modes_colors) ... ok
+test_schema_source_fixtures_only (__main__.Pipeline.test_schema_source_fixtures_only) ... ok
+test_seed_determinism_three_keys_and_higher_contrast (__main__.Pipeline.test_seed_determinism_three_keys_and_higher_contrast) ... ok
+test_seed_pack_single_mode_matches_schema_and_import (__main__.Pipeline.test_seed_pack_single_mode_matches_schema_and_import) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 29.306s
+
+OK

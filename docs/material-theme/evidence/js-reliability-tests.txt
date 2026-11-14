@@ -1,0 +1,2 @@
+PASS: queue ordering/load/failure/retry, pointer direction, calendar boundaries, launcher updates
+PASS: actual group-center/edge/self drop classification
